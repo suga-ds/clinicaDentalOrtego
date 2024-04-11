@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Clinica Dental Ortego</title>
+<style>
+    footer {
+        background: #f0f0f0;
+        display: flex;
+        justify-content: space-around;
+        padding: 20px 0;
+        font-family: Arial, sans-serif;
+    }
+    .footer-section {
+        background: white;
+        padding: 20px;
+        border-radius: 5px;
+        width: 30%; /* Adjust width as necessary */
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Simple box shadow for styling */
+        text-align: center;
+    }
+    .footer-section h3 {
+        color: #005f9e; /* Adjust color as needed */
+        margin-bottom: 15px;
+    }
+    .footer-section p, .footer-section a {
+        color: white;
+        margin-bottom: 8px;
+        display: block;
+    }
+    .icon {
+        margin-bottom: 10px;
+    }
+    .metro, .bus {
+        margin: 10px 0;
+    }
+    .metro span, .bus span {
+        background: #eaeaea; /* Dummy background color for the metro/bus labels */
+        display: inline-block;
+        padding: 2px 8px;
+        margin-right: 5px;
+        border-radius: 3px;
+        color: #333;
+        font-weight: bold;
+    }
+
+    .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            background: #fff;
+        }
+
+        .logo-name {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo {
+            margin-right: 10px;
+        }
+
+        .logo img {
+            width: 50px; /* Adjust as needed */
+        }
+
+        .navigation {
+            display: flex;
+            list-style: none;
+        }
+
+        .navigation li {
+            margin-right: 20px; /* Spacing between nav items */
+        }
+
+        .navigation li:last-child {
+            margin-right: 0;
+        }
+
+        .social-links {
+            display: flex;
+        }
+
+        .social-links a {
+            margin-left: 10px;
+        }
+
+        .social-links img {
+            width: 20px; /* Adjust as needed */
+        }
+
+        footer {
+        background: white;
+        color: #fff;
+        padding: 20px 0;
+        font-family: Arial, sans-serif;
+        }
+        .footer-container {
+            display: flex;
+            justify-content: space-around;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .footer-section {
+            margin: 0 20px;
+        }
+        .footer-section h4 {
+            color: grey;
+            margin-bottom: 15px;
+        }
+        .footer-section p {
+            color: grey;
+            margin-bottom: 5px;
+            line-height: 1.5;
+        }
+
+</style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo-name">
+            <div class="logo">
+                <img src="./images/logo.jpg" alt="Logo">
+            </div>
+            <div class="name">CLINICA DENTAL ORTEGO</div>
+        </div>
+
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html">Clínica</a></li>
+                <li><a href="equipo.html">Equipo</a></li>
+                <li><a href="instalaciones.html">Instalaciones</a></li>
+                <li><a href="tratamientos.html">Tratamientos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <div class="social-links">
+            <a href="link_to_facebook" target="_blank"><img src="images/facebook_icon.png" alt="Facebook"></a>
+            <a href="link_to_instagram" target="_blank"><img src="images/instagram_icon.png" alt="Instagram"></a>
+        </div>
+    </header>
+
+
+    <footer>
+        <div class="footer-section">
+            <h3>Clínica Dental Padrós</h3>
+            <p class="icon">📍 Av. del Paral·lel, 84 Barcelona</p>
+            <p class="icon">📞 933 29 18 95</p>
+            <p class="icon">📱 608 20 16 74</p>
+            <p>Horas concertadas</p>
+            <p>Atención telefónica de 9h. a 21h.</p>
+            <p>Sábado y domingo cerrado</p>
+        </div>
+        <div class="footer-section">
+            <h3>Parking gratuito para nuestros clientes</h3>
+            <p class="icon">🅿️ Parking Olímpic: Av. Paral·lel, 106</p>
+            <p class="icon">🅿️ Parking Saba Bamsa: c/ Abat Safont, 2</p>
+            <p class="icon">🅿️ Parking Aldana: c/ Aldana, 5</p>
+        </div>
+        <div class="footer-section">
+            <h3>Cómo llegar</h3>
+            <div class="metro">
+                <p>🚇 METRO:</p>
+                <span>L2</span><span>L3</span> Paral·lel
+            </div>
+            <div class="bus">
+                <p>🚌 BUS:</p>
+                <span>21</span><span>D20</span><span>H14</span><span>V11</span> Paral·lel - Vilà i Vilà
+                <br>
+                <span>88</span> El molino
+                <br>
+                <span>121</span><span>D20</span> Paral·lel - Ronda Sant Pau
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
