@@ -1,0 +1,210 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: #bdbdbd;
+    color: white;
+}
+
+.logo-name {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    margin-right: 10px;
+}
+
+.logo img {
+    width: 70px;
+}
+
+.navigation {
+    display: flex;
+    list-style: none;
+    text-decoration: none;  /* Optional: removes underline from links */
+    font-size: 25px; /* Change the font size as needed */
+}
+.navigation a:hover, .navigation a:active {
+    color: #0056b3;  /* Different color for hover and active states */
+    text-decoration: none;  /* Optional: removes underline from links */
+}
+
+.navigation a:visited {
+    color: inherit;  /* Forces visited links to inherit the specified color */
+}
+.navigation li {
+    margin-right: 100px; /* Spacing between nav items */
+
+}
+
+.navigation li:last-child {
+    margin-right: 120px;
+}
+
+.social-links {
+    display: flex;
+}
+
+.social-links a {
+    margin-left: 10px;
+}
+
+.social-links img {
+    width: 20px; /* Adjust as needed */
+}
+
+
+
+
+footer {
+background: #444444;
+color: #fff;
+padding: 20px 0;
+font-family: Arial, sans-serif;
+}
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: auto;
+}
+.footer-section {
+    margin: 0 20px;
+}
+.footer-section h4 {
+    color: #f8f8f8;
+    margin-bottom: 15px;
+}
+.footer-section p {
+    color: #ccc;
+    margin-bottom: 5px;
+    line-height: 1.5;
+}
+
+
+
+
+body {
+    font-family: 'Calibri', 'Arial', sans-serif;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 20px;
+    background: #bdbdbd;
+    color: white;
+
+}
+div {
+    margin-bottom: 15px;
+}
+.equipo-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 40px;
+}
+h1 {
+    font-size: 24px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+ul li {
+    margin-bottom: 5px;
+}
+.team, .reasons, .specialization, .architects {
+    margin-bottom: 20px;
+}
+.team li, .reasons p, .specialization p, .architects p {
+    font-size: 16px;
+    color: #333;
+}
+.container2 {
+    max-width: 1200px;
+    margin: auto;
+}
+.treatments-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+.treatment {
+    width: 300px; /* Adjust width as necessary */
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Simple box shadow for styling */
+    background: white;
+    padding: 10px;
+}
+/* .treatment-icon {
+    Placeholder for actual icon styles 
+}*/
+.treatment-title {
+    color: #333;
+    font-size: 22px;
+    margin: 10px 0;
+}
+.treatment-description {
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.treatment-cta {
+    color: #007bff;
+    text-decoration: none;
+    background-color: transparent;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.treatment-cta:hover {
+    text-decoration: underline;
+}
+.info-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+    font-family: Arial, sans-serif;
+    color: black;
+}
+.info-block {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    width: 30%; /* Adjust width as necessary */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Simple box shadow for styling */
+    text-align: center;
+}
+.info-block h3 {
+    color: #005f9e; /* Adjust color as needed */
+    margin-bottom: 15px;
+}
+.info-block p, .info-block a {
+    display: block;
+}
+.icon {
+    margin-bottom: 10px;
+}
+.metro, .bus {
+    margin: 10px 0;
+}
+.metro span, .bus span {
+    background: #eaeaea; /* Dummy background color for the metro/bus labels */
+    display: inline-block;
+    padding: 2px 8px;
+    margin-right: 5px;
+    border-radius: 3px;
+    color: #333;
+    font-weight: bold;
+}
+

@@ -3,115 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <title>Clinica Dental Ortego</title>
-    <style>
-        body {
-            font-family: Georgia;
-        }
-
-        .header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px;
-            background: #fff;
-        }
-
-        .logo-name {
-            display: flex;
-            align-items: center;
-        }
-
-        .logo {
-            margin-right: 10px;
-        }
-
-        .logo img {
-            width: 50px; /* Adjust as needed */
-        }
-
-        .navigation {
-            display: flex;
-            list-style: none;
-        }
-
-        .navigation li {
-            margin-right: 20px; /* Spacing between nav items */
-        }
-
-        .navigation li:last-child {
-            margin-right: 0;
-        }
-
-        .social-links {
-            display: flex;
-        }
-
-        .social-links a {
-            margin-left: 10px;
-        }
-
-        .social-links img {
-            width: 20px; /* Adjust as needed */
-        }
-
-        footer {
-        background: #333;
-        color: #fff;
-        padding: 20px 0;
-        font-family: Arial, sans-serif;
-        }
-        .footer-container {
-            display: flex;
-            justify-content: space-around;
-            max-width: 1200px;
-            margin: auto;
-        }
-        .footer-section {
-            margin: 0 20px;
-        }
-        .footer-section h4 {
-            color: #f8f8f8;
-            margin-bottom: 15px;
-        }
-        .footer-section p {
-            color: #ccc;
-            margin-bottom: 5px;
-            line-height: 1.5;
-        }
-
-        .center-text {
-            text-align: center;
-            max-width: 1200px;
-            margin: 0 auto;
-            margin-bottom: 100px;
-            margin-top: 100px;
-        }
-
-    </style>
+    <link href='./style.css' rel='stylesheet'>
+    <link href='style-library.css' rel='stylesheet'>
 </head>
-<body>
-    <header class="header">
-        <div class="logo-name">
-            <div class="logo">
-                <img src="./images/logo.jpg" alt="Logo">
-            </div>
-            <div class="name">CLINICA DENTAL ORTEGO</div>
-        </div>
 
-        <nav>
-            <ul class="navigation">
-                <li><a href="index.html">Clínica</a></li>
-                <li><a href="equipo.html">Equipo</a></li>
-                <li><a href="instalaciones.html">Instalaciones</a></li>
-                <li><a href="tratamientos.html">Tratamientos</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-        <div class="social-links">
-            <a href="link_to_facebook" target="_blank"><img src="images/facebook_icon.png" alt="Facebook"></a>
-            <a href="link_to_instagram" target="_blank"><img src="images/instagram_icon.png" alt="Instagram"></a>
-        </div>
-    </header>
+
+<body>
+    <header id="app-header"></header>
+    <script async src="header.js"></script>  
 
 
     <div><h1 class="center-text">Una clínica dental enfocada a la odontología de excelencia. Un equipo experto y entusiasta de su trabajo.</h1></div>
@@ -128,26 +27,7 @@
     </div>
 
 
-
-    <footer>
-        <div class="footer-container">
-            <div class="footer-section">
-                <h4>Dirección</h4>
-                <p>C/Madrazo 141. pral 1ª</p>
-                <p>08021 Barcelona</p>
-                <p>España</p>
-            </div>
-            <div class="footer-section">
-                <h4>Contacto</h4>
-                <p>Teléfono: +34 646 272 974 // 93 209 71 67</p>
-                <p>Email: Dentalortego@gmail.com</p>
-            </div>
-            <div class="footer-section">
-                <h4>Horario</h4>
-                <p>Lunes, Miercoles: 3:00 PM - 9:00 PM</p>
-                <p>Martes, Jueves, Viernes: 9:00 AM - 3:00 PM</p>
-            </div>
-        </div>
-    </footer>
+    <footer id="app-footer"></footer>
+    <script async src="footer.js"></script>
 </body>
 </html>
