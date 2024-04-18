@@ -1,3 +1,4 @@
+/* HEADER */
 header {
     display: flex;
     justify-content: space-between;
@@ -52,12 +53,14 @@ header {
 }
 
 .social-links img {
-    width: 20px; /* Adjust as needed */
+    width: 50px;  /* Set the width of the icons */
+    height: 50px; /* Set the height of the icons */
+
 }
 
 
 
-
+/* FOOTER */
 footer {
 background: #444444;
 color: #fff;
@@ -85,23 +88,17 @@ font-family: Arial, sans-serif;
 
 
 
-
+/* BODY */
 body {
     font-family: 'Calibri', 'Arial', sans-serif;
-    margin-left: 20px;
-    margin-right: 20px;
     padding: 20px;
     background: #bdbdbd;
     color: white;
+    margin: 0 20px;
 
 }
 div {
     margin-bottom: 15px;
-}
-.equipo-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 40px;
 }
 h1 {
     font-size: 24px;
@@ -120,17 +117,51 @@ ul {
 ul li {
     margin-bottom: 5px;
 }
-.team, .reasons, .specialization, .architects {
-    margin-bottom: 20px;
+.blog {
+    margin: 0 200px;
 }
-.team li, .reasons p, .specialization p, .architects p {
-    font-size: 16px;
+p {
+    font-size: large;
+}
+.highlight {
+    color: rgb(52, 123, 182);
+    font-weight: bold;
+    font-style: italic;
+    font-size: 20px;
+}
+
+/* EQUIPO */
+.profile-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap to the next line if needed */
+    justify-content: space-between; /* Spaces out the profiles evenly */
+    margin: 0 550PX;
+}
+
+.profile {
+    text-align: center;
+    flex-basis: calc(33.333% - 20px); /* Subtracts the margin from the flex-basis */
+    margin: 10px; /* Adjust margin as needed for spacing between profiles */
+    box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+}
+
+.profile img {
+    width: 200px; /* 100%;  Makes the image responsive to the container size */
+    height: 300px; /* auto;  Keeps the image's aspect ratio intact */
+    border-radius: 5px;
+    background-color: #667;
+    display: block; /* Prevents default inline behavior which can cause spacing issues */
+    margin: auto; /* Centers the image in the flex container */
+}
+
+.profile h3 {
+    margin-top: 10px;
+    font-size: 18px;
     color: #333;
 }
-.container2 {
-    max-width: 1200px;
-    margin: auto;
-}
+
+
+/* TRATAMIENTOS */
 .treatments-container {
     display: flex;
     justify-content: center;
@@ -159,7 +190,7 @@ ul li {
     margin-bottom: 20px;
 }
 .treatment-cta {
-    color: #007bff;
+    color: rgb(102, 102, 102);
     text-decoration: none;
     background-color: transparent;
     border: none;
@@ -170,6 +201,8 @@ ul li {
 .treatment-cta:hover {
     text-decoration: underline;
 }
+
+/* CONTACTO */
 .info-section {
     display: flex;
     justify-content: space-around;
@@ -186,7 +219,7 @@ ul li {
     text-align: center;
 }
 .info-block h3 {
-    color: #005f9e; /* Adjust color as needed */
+    color: #333; /* Adjust color as needed */
     margin-bottom: 15px;
 }
 .info-block p, .info-block a {
