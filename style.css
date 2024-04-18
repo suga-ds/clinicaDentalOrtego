@@ -62,10 +62,11 @@ header {
 
 /* FOOTER */
 footer {
-background: #444444;
-color: #fff;
-padding: 20px 0;
-font-family: Arial, sans-serif;
+    background: #444444;
+    color: #fff;
+    padding: 20px 0;
+    font-family: Arial, sans-serif;
+    font-size: 30px;
 }
 .footer-container {
     display: flex;
