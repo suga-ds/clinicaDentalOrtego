@@ -5,7 +5,6 @@ let appHeader = `
     </div>
     <div class="name">
         <p>CLINICA DENTAL ORTEGO<br>C/ Madrazo 141. pral 1ª - Sarrià Sant-Gervasi<br>+34 646 272 974 | 93 209 71 67 | Dentalortego@gmail.com</p>
-
     </div>
 </div>
 
