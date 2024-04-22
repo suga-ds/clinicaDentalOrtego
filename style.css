@@ -1,47 +1,25 @@
 /* HEADER */
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background: #bdbdbd;
-    color: white;
+header .up {
+    display: flex;                  /* Enable flexbox layout */
+    justify-content: space-between; /* Space between the items */
+    align-items: center;            /* Center items vertically */
+    width: 100%;                    /* Full width of the container */
 }
 
-.logo-name {
-    display: flex;
-    align-items: center;
+.name p {
+    margin-right: -550px;
+    font-size: 25px;
 }
 
-.logo {
-    margin-right: 10px;
+.placeholder-slogan {
+    width: 200px;
+    height: 50px;
+    background-color: #d3d3d3;
+    display: block;
 }
 
 .logo img {
-    width: 70px;
-}
-
-.navigation {
-    display: flex;
-    list-style: none;
-    text-decoration: none;  /* Optional: removes underline from links */
-    font-size: 25px; /* Change the font size as needed */
-}
-.navigation a:hover, .navigation a:active {
-    color: #0056b3;  /* Different color for hover and active states */
-    text-decoration: none;  /* Optional: removes underline from links */
-}
-
-.navigation a:visited {
-    color: inherit;  /* Forces visited links to inherit the specified color */
-}
-.navigation li {
-    margin-right: 100px; /* Spacing between nav items */
-
-}
-
-.navigation li:last-child {
-    margin-right: 120px;
+    width: 110px;
 }
 
 .social-links {
@@ -53,9 +31,27 @@ header {
 }
 
 .social-links img {
-    width: 50px;  /* Set the width of the icons */
-    height: 50px; /* Set the height of the icons */
+    width: 60px;  
+    height: 60px;
 
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-around;
+    font-size: 25px;
+    margin-bottom: 40px;
+    background-color: #D3D3D3;
+}
+
+.navigation a:link,
+.navigation a:visited,
+.navigation a:hover,
+.navigation a:active {
+    color: #333; /* Keeps color consistent */
+    background-color: transparent; /* Optional: background color if needed */
+    text-decoration: none;
+    font-weight: bold;
 }
 
 
@@ -63,26 +59,20 @@ header {
 /* FOOTER */
 footer {
     background: rgb(68, 68, 68);
-    color: #fff;
-    padding: 20px 0;
+    color: #d8d8d8;
     font-family: Arial, sans-serif;
     font-size: 30px;
+    margin-top: 100px;
 }
 .footer-container {
     display: flex;
     justify-content: space-around;
-    margin: auto;
-}
-.footer-section {
-    margin: 0 20px;
 }
 .footer-section h4 {
-    color: #f8f8f8;
-    margin-bottom: 15px;
+    color: #e7e7e7;
 }
 .footer-section p {
     color: #ccc;
-    margin-bottom: 5px;
     line-height: 1.5;
     font-size: 22px;
 }
@@ -91,12 +81,10 @@ footer {
 
 /* BODY */
 body {
-    font-family: 'Calibri', 'Arial', sans-serif;
-    padding: 20px;
-    background: #bdbdbd;
-    color: white;
-    margin: 0 20px;
-
+    font-family: 'Calibri';
+    padding: 40px;
+    background: #eaeaea;
+    color: #464646;
 }
 div {
     margin-bottom: 15px;
@@ -119,17 +107,28 @@ ul li {
     margin-bottom: 5px;
 }
 .blog {
-    margin: 0 200px;
+    margin: 0 400px;
 }
 p {
     font-size: large;
 }
 .highlight {
-    color: rgb(52, 123, 182);
+    color: #171717;
     font-weight: bold;
-    font-style: italic;
     font-size: 20px;
 }
+
+/* INICIO */
+
+.porqueNostros {
+    display: flex;
+}
+
+.porqueNostros h2 {
+    font-size: 40px !important;
+    margin-right: 100px;
+}
+
 
 /* EQUIPO */
 .profile-container {
@@ -150,7 +149,7 @@ p {
     width: 200px; /* 100%;  Makes the image responsive to the container size */
     height: 300px; /* auto;  Keeps the image's aspect ratio intact */
     border-radius: 5px;
-    background-color: #667;
+    background-color: #d3d3d3;
     display: block; /* Prevents default inline behavior which can cause spacing issues */
     margin: auto; /* Centers the image in the flex container */
 }

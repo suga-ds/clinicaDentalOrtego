@@ -3,8 +3,7 @@ let appFooter = `
     <div class="footer-section">
         <h4>Dirección</h4>
         <p>C/ Madrazo 141. pral 1ª</p>
-        <p>08021 Barcelona</p>
-        <p>España</p>
+        <p>08021 Barcelona, España</p>
     </div>
     <div class="footer-section">
         <h4>Contacto</h4>
