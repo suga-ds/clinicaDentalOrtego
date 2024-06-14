@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
         </div>
         <div class="center">
             <img src="./images/logo.png" alt="Logo">
-            <img src="./images/slogan.jpg" class="placeholder-slogan">
+            <span style="font-size: 20px;">C</span>LINICA <span style="font-size: 20px;">D</span>ENTAL <span style="font-size: 20px;">O</span>RTEGO</p>
         </div>
         <div class="right">
             <div class="languages">
