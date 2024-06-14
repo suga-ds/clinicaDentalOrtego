@@ -1,14 +1,15 @@
 /* HEADER */
 header .up {
-    display: flex;                  /* Enable flexbox layout */
-    justify-content: space-between; /* Space between the items */
-    align-items: center;            /* Center items vertically */
-    width: 100%;                    /* Full width of the container */
+    display: flex;              
 }
 
-.name p {
-    margin-right: -550px;
+.left, .center, .right {
+    flex: 1;
+  }  
+
+.left p {
     font-size: 25px;
+    align-items: center; 
 }
 
 .placeholder-slogan {
@@ -18,40 +19,80 @@ header .up {
     display: block;
 }
 
-.logo img {
+.center {
+    text-align: center;
+}
+
+.center img {
     width: 110px;
+    margin: 0 auto;
 }
 
-.social-links {
+.right {
     display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
 
-.social-links a {
-    margin-left: 10px;
+.right .languages {
+    margin-right: 40px;
+    height: 50px;
 }
 
-.social-links img {
+.right .social-links img {
     width: 60px;  
     height: 60px;
-
 }
 
-.navigation {
+.right .social-links p {
+    font-size: 30px;
+}
+
+div.container {
     display: flex;
-    justify-content: space-around;
-    font-size: 25px;
-    margin-bottom: 40px;
-    background-color: #D3D3D3;
+    background-color: #ccc;
 }
 
-.navigation a:link,
-.navigation a:visited,
-.navigation a:hover,
-.navigation a:active {
-    color: #333; /* Keeps color consistent */
-    background-color: transparent; /* Optional: background color if needed */
+div.container a {
+    flex: 1;
+    text-align: center;
+    font-size: 25PX;
+    color: #333;
     text-decoration: none;
-    font-weight: bold;
+    padding: 10px 10px;
+    position: relative;
+    z-index: 0;
+    cursor: pointer;
+}
+
+div.topBotomBordersIn a:before, div.topBotomBordersIn a:after
+{
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    height: 2px;
+    background: #333;
+    content: "";
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+div.topBotomBordersIn a:before
+{
+    top: 0px;
+    transform: translateY(-10px);
+}
+
+div.topBotomBordersIn a:after
+{
+    bottom: 0px;
+    transform: translateY(10px);
+}
+
+div.topBotomBordersIn a:hover:before, div.topBotomBordersIn a:hover:after
+{
+    opacity: 1;
+    transform: translateY(0px);
 }
 
 
@@ -81,7 +122,7 @@ footer {
 
 /* BODY */
 body {
-    font-family: 'Calibri';
+    font-family: "Noto Serif", serif;
     padding: 40px;
     background: #eaeaea;
     color: #464646;
@@ -106,9 +147,7 @@ ul {
 ul li {
     margin-bottom: 5px;
 }
-.blog {
-    margin: 0 400px;
-}
+
 p {
     font-size: large;
 }
@@ -129,6 +168,10 @@ p {
     margin-right: 100px;
 }
 
+.blog {
+    margin: 0 400px;
+    text-align: justify;
+}
 
 /* EQUIPO */
 .profile-container {
@@ -199,36 +242,43 @@ p {
 }
 
 /* CONTACTO */
-.info-section {
+.contacto {
     display: flex;
-    justify-content: space-around;
-    padding: 20px 0;
-    font-family: Arial, sans-serif;
-    color: black;
+    align-items: center;
 }
+.info-section {
+    flex: 1;
+    padding: 20px 0;
+}
+
 .info-block {
     background: white;
     padding: 20px;
     border-radius: 5px;
-    width: 30%; /* Adjust width as necessary */
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Simple box shadow for styling */
+    width: 100%; /* Ensures it fills the width of its parent, .info-section */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     text-align: center;
 }
+
 .info-block h3 {
-    color: #333; /* Adjust color as needed */
+    color: #333;
     margin-bottom: 15px;
 }
+
 .info-block p, .info-block a {
     display: block;
 }
+
 .icon {
     margin-bottom: 10px;
 }
+
 .metro, .bus {
     margin: 10px 0;
 }
+
 .metro span, .bus span {
-    background: #eaeaea; /* Dummy background color for the metro/bus labels */
+    background: #eaeaea;
     display: inline-block;
     padding: 2px 8px;
     margin-right: 5px;
@@ -237,3 +287,9 @@ p {
     font-weight: bold;
 }
 
+.contacto .maps {
+    flex: 3;
+    background-color: #d3d3d3;
+    margin-left: 100px;
+    height: 770px;
+}
