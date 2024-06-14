@@ -1,6 +1,7 @@
 /* HEADER */
 header .up {
-    display: flex;              
+    display: flex;
+    font-weight: 600;
 }
 
 .left, .center, .right {
