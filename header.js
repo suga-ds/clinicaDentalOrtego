@@ -6,15 +6,15 @@ document.addEventListener('DOMContentLoaded', function() {
         </div>
         <div class="center">
             <img style="width: 150px; margin: 0px 140px;"src="./images/logo.png" alt="Logo">
-            <p style="font-size=29;"><span style="font-size: 35px;">C</span>LINICA <span style="font-size: 35px;">D</span>ENTAL <span style="font-size: 35px;">O</span>RTEGO</p>
+            <p style="font-size=29;"><span style="font-size: 35px;">C</span>LíNICA <span style="font-size: 35px;">D</span>ENTAL <span style="font-size: 35px;">O</span>RTEGO</p>
         </div>
         <div class="right">
             <div class="languages">
                 <div id="google_translate_element"></div>
             </div>
             <div class="social-links">
-                <a href="link_to_facebook" target="_blank"><img src="images/facebook_icon.png" alt="Facebook" style="width: 55px; height: 55px;"></a>
-                <a href="link_to_instagram" target="_blank"><img src="images/instagram_icon.png" alt="Instagram"></a>
+                <a href="link_to_facebook" target="_blank"><img src="images/facebook_icon.png" alt="Facebook" style="width: 45px; height: 45px;"></a>
+                <a href="link_to_instagram" target="_blank"><img src="images/instagram_icon.png" alt="Instagram";></a>
                 <a href="link_to_facebook" target="_blank"><img src="images/whatsapp_icon.png" alt="Facebook";></a>
             </div>
         </div>
