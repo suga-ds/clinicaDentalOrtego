@@ -2,11 +2,11 @@ document.addEventListener('DOMContentLoaded', function() {
     let appHeader = `
     <div class="up">
         <div class="left">
-            <p>C/ Madrazo 141. pral 1ª - Sarrià Sant-Gervasi<br>+34 646 272 974 | 93 209 71 67<br>Dentalortego@gmail.com</p>
+            <p>C/ Madrazo 141. pral 1ª, 08021, Barcelona<br>+93 209 71 67 / 34 646 272 974 <br>Dentalortego@gmail.com</p>
         </div>
         <div class="center">
-            <img src="./images/logo.png" alt="Logo">
-            <span style="font-size: 52px;">C</span>LINICA <span style="font-size: 52px;">D</span>ENTAL <span style="font-size: 52px;">O</span>RTEGO</p>
+            <img style="width: 150px; margin: 0px 140px;"src="./images/logo.png" alt="Logo">
+            <p style="font-size=29;"><span style="font-size: 35px;">C</span>LINICA <span style="font-size: 35px;">D</span>ENTAL <span style="font-size: 35px;">O</span>RTEGO</p>
         </div>
         <div class="right">
             <div class="languages">
