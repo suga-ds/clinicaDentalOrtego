@@ -4,29 +4,26 @@ header .up {
     font-weight: 600;
 }
 
-.left, .center, .right {
+.left,
+.center,
+.right {
     flex: 1;
-  }  
+}
 
 .left p {
     font-size: 25px;
-    align-items: center; 
-}
-
-.placeholder-slogan {
-    width: 200px;
-    height: 50px;
-    background-color: #d3d3d3;
-    display: block;
+    align-items: center;
+    min-width: 355px;
 }
 
 .center {
     text-align: center;
+    line-height: 0px;
 }
 
 .center img {
     width: 110px;
-    margin: 10px auto;
+    margin: 0px auto;
 }
 
 .right {
@@ -40,13 +37,9 @@ header .up {
     height: 50px;
 }
 
-.right .social-links img {
-    width: 50px;  
-    height: 50px;
-}
-
-.right .social-links p {
-    font-size: 30px;
+.right .social-links {
+    line-height: 0px;
+    min-width: 160px;
 }
 
 div.container {
@@ -67,8 +60,8 @@ div.container a {
     font-weight: 600;
 }
 
-div.topBotomBordersIn a:before, div.topBotomBordersIn a:after
-{
+div.topBotomBordersIn a:before,
+div.topBotomBordersIn a:after {
     position: absolute;
     left: 0px;
     width: 100%;
@@ -79,20 +72,18 @@ div.topBotomBordersIn a:before, div.topBotomBordersIn a:after
     transition: all 0.3s;
 }
 
-div.topBotomBordersIn a:before
-{
+div.topBotomBordersIn a:before {
     top: 0px;
     transform: translateY(-10px);
 }
 
-div.topBotomBordersIn a:after
-{
+div.topBotomBordersIn a:after {
     bottom: 0px;
     transform: translateY(10px);
 }
 
-div.topBotomBordersIn a:hover:before, div.topBotomBordersIn a:hover:after
-{
+div.topBotomBordersIn a:hover:before,
+div.topBotomBordersIn a:hover:after {
     opacity: 1;
     transform: translateY(0px);
 }
@@ -107,13 +98,16 @@ footer {
     font-size: 30px;
     margin-top: 100px;
 }
+
 .footer-container {
     display: flex;
     justify-content: space-around;
 }
+
 .footer-section h4 {
     color: #e7e7e7;
 }
+
 .footer-section p {
     color: #ccc;
     line-height: 1.5;
@@ -129,23 +123,28 @@ body {
     background: #eaeaea;
     color: #464646;
 }
+
 div {
     margin-bottom: 15px;
 }
+
 h1 {
     font-size: 24px;
     margin-bottom: 30px;
     text-align: center;
 }
+
 h2 {
     font-size: 20px;
     margin-bottom: 20px;
 }
+
 ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
 }
+
 ul li {
     margin-bottom: 5px;
 }
@@ -153,6 +152,7 @@ ul li {
 p {
     font-size: large;
 }
+
 .highlight {
     color: #171717;
     font-weight: bold;
@@ -178,25 +178,34 @@ p {
 /* EQUIPO */
 .profile-container {
     display: flex;
-    flex-wrap: wrap; /* Allows items to wrap to the next line if needed */
-    justify-content: space-between; /* Spaces out the profiles evenly */
-    margin: 0 550PX;
+    flex-wrap: wrap;
+    /* Allows items to wrap to the next line if needed */
+    justify-content: space-between;
+    /* Spaces out the profiles evenly */
+    margin: 0 300PX;
 }
 
 .profile {
     text-align: center;
-    flex-basis: calc(33.333% - 20px); /* Subtracts the margin from the flex-basis */
-    margin: 10px; /* Adjust margin as needed for spacing between profiles */
-    box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+    flex-basis: calc(33.333% - 20px);
+    /* Subtracts the margin from the flex-basis */
+    margin: 10px;
+    /* Adjust margin as needed for spacing between profiles */
+    box-sizing: border-box;
+    /* Includes padding and border in the element's total width and height */
 }
 
 .profile img {
-    width: 200px; /* 100%;  Makes the image responsive to the container size */
-    height: 300px; /* auto;  Keeps the image's aspect ratio intact */
+    width: 200px;
+    /* 100%;  Makes the image responsive to the container size */
+    height: 300px;
+    /* auto;  Keeps the image's aspect ratio intact */
     border-radius: 5px;
     background-color: #d3d3d3;
-    display: block; /* Prevents default inline behavior which can cause spacing issues */
-    margin: auto; /* Centers the image in the flex container */
+    display: block;
+    /* Prevents default inline behavior which can cause spacing issues */
+    margin: auto;
+    /* Centers the image in the flex container */
 }
 
 .profile h3 {
@@ -210,26 +219,32 @@ p {
     display: flex;
     justify-content: center;
     gap: 20px;
-    padding: 20px;
     border-radius: 10px;
 }
+
 .treatment {
-    width: 300px; /* Adjust width as necessary */
+    min-width: 200px;
+    width: 300px;
+    /* Adjust width as necessary */
     text-align: center;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Simple box shadow for styling */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Simple box shadow for styling */
     background: white;
     padding: 10px;
 }
+
 .treatment-title {
     color: #333;
     font-size: 22px;
     margin: 10px 0;
 }
+
 .treatment-description {
     color: #666;
     font-size: 16px;
     margin-bottom: 20px;
 }
+
 .treatment-cta {
     color: rgb(102, 102, 102);
     text-decoration: none;
@@ -239,6 +254,7 @@ p {
     cursor: pointer;
     font-size: 16px;
 }
+
 .treatment-cta:hover {
     text-decoration: underline;
 }
@@ -248,17 +264,20 @@ p {
     display: flex;
     align-items: center;
 }
+
 .info-section {
     flex: 1;
     padding: 20px 0;
+    min-width: 300px;
 }
 
 .info-block {
     background: white;
     padding: 20px;
     border-radius: 5px;
-    width: 100%; /* Ensures it fills the width of its parent, .info-section */
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    width: 100%;
+    /* Ensures it fills the width of its parent, .info-section */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
@@ -267,7 +286,8 @@ p {
     margin-bottom: 15px;
 }
 
-.info-block p, .info-block a {
+.info-block p,
+.info-block a {
     display: block;
 }
 
@@ -275,11 +295,13 @@ p {
     margin-bottom: 10px;
 }
 
-.metro, .bus {
+.metro,
+.bus {
     margin: 10px 0;
 }
 
-.metro span, .bus span {
+.metro span,
+.bus span {
     background: #eaeaea;
     display: inline-block;
     padding: 2px 8px;
@@ -290,8 +312,6 @@ p {
 }
 
 .contacto .maps {
-    flex: 3;
-    background-color: #d3d3d3;
-    margin-left: 100px;
-    height: 770px;
+    margin-left: 50px;
+    height: 100%;
 }
