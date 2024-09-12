@@ -23,10 +23,12 @@ document.addEventListener('DOMContentLoaded', function() {
     <div class="container purple topBotomBordersIn">
         <a href="index.html">INICIO</a>
         <a href="equipo.html">EQUIPO</a>
-        <a href="instalaciones.html">INSTALACIONES</a>
         <a href="tratamientos.html">TRATAMIENTOS</a>
         <a href="contacto.html">CONTACTO</a>
     </div>
     `;
     document.getElementById("app-header").innerHTML = appHeader;
 });
+
+
+//         <a href="instalaciones.html">INSTALACIONES</a>

@@ -118,7 +118,7 @@ footer {
 
 /* BODY */
 body {
-    font-family: "Noto Serif", serif;
+    font-family: "Playfair Display", serif;
     padding: 20px;
     background: #eaeaea;
     color: #464646;
@@ -171,11 +171,16 @@ p {
 }
 
 .blog {
-    margin: 0 200px;
+    padding: 100px 500px;
     text-align: justify;
+    background-image: url(./images/1725557508332.jpg);
 }
 
 /* EQUIPO */
+#title {
+    margin: 70px 0;
+}
+
 .profile-container {
     display: flex;
     flex-wrap: wrap;
