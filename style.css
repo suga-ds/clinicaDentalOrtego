@@ -1,7 +1,16 @@
+/* GENERALS*/
+
+div {
+    margin: 0;
+}
+
 /* HEADER */
 header .up {
     display: flex;
     font-weight: 600;
+    padding-left: 1vw;
+    padding-top: 4vh;
+    margin-bottom: 4vh;
 }
 
 .left,
@@ -40,6 +49,7 @@ header .up {
 .right .social-links {
     line-height: 0px;
     min-width: 160px;
+    justify-content: flex-end;
 }
 
 div.container {
@@ -96,7 +106,6 @@ footer {
     color: #d8d8d8;
     font-family: Arial, sans-serif;
     font-size: 30px;
-    margin-top: 100px;
 }
 
 .footer-container {
@@ -119,13 +128,10 @@ footer {
 /* BODY */
 body {
     font-family: "Playfair Display", serif;
-    padding: 20px;
     background: #eaeaea;
     color: #464646;
-}
-
-div {
-    margin-bottom: 15px;
+    padding: 0;
+    margin: 0;
 }
 
 h1 {
@@ -171,6 +177,7 @@ p {
 }
 
 .blog {
+    text-indent: 50px;
     padding: 100px 500px;
     text-align: justify;
     background-image: url(./images/1725557508332.jpg);
@@ -201,7 +208,7 @@ p {
 }
 
 .profile img {
-    width: 200px;
+    width: auto;
     /* 100%;  Makes the image responsive to the container size */
     height: 300px;
     /* auto;  Keeps the image's aspect ratio intact */
@@ -225,6 +232,7 @@ p {
     justify-content: center;
     gap: 20px;
     border-radius: 10px;
+    margin-bottom: 4vh;
 }
 
 .treatment {
@@ -284,6 +292,7 @@ p {
     /* Ensures it fills the width of its parent, .info-section */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     text-align: center;
+    margin-bottom: 2vh;
 }
 
 .info-block h3 {
@@ -318,5 +327,4 @@ p {
 
 .contacto .maps {
     margin-left: 50px;
-    height: 100%;
 }

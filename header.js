@@ -14,8 +14,8 @@ document.addEventListener('DOMContentLoaded', function() {
             </div>
             <div class="social-links">
                 <a href="link_to_facebook" target="_blank"><img src="images/facebook_icon.png" alt="Facebook" style="width: 45px; height: 45px;"></a>
-                <a href="link_to_instagram" target="_blank"><img src="images/instagram_icon.png" alt="Instagram" style="width: 55px; height: 55px"></a>
-                <a href="link_to_whatsapp" target="_blank"><img src="images/whatsapp_icon.png" alt="Facebook" style="width: 50px; height: 50px;"></a>
+                <a href="link_to_instagram" target="_blank"><img src="images/instagram_icon.png" alt="Instagram" style="width: 45px; height: 45px"></a>
+                <a href="link_to_whatsapp" target="_blank"><img src="images/whatsapp_icon.png" alt="Facebook" style="width: 45px; height: 45px;"></a>
             </div>
         </div>
     </div>
