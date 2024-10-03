@@ -1,13 +1,38 @@
-/* HEADER */
-header {
-    margin: 0 2vw;
+/* BODY */
+body {
+    font-family: "Playfair Display", serif;
+    background: rgb(244, 244, 244);
+    color: #464646;
+    padding: 0;
+    margin: 0;
 }
 
+h1 {
+    font-size: 1.2vw;
+    margin-bottom: 5vh;
+    text-align: center;
+}
+
+ul li {
+    margin-bottom: 5px;
+}
+
+p {
+    font-size: 1.3vw;
+}
+
+.highlight {
+    color: #171717;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* HEADER */
 header .up {
     display: flex;
     font-weight: 600;
-    padding-left: 1vw;
-    padding-top: 4vh;
+    margin: 0 2vw;
+    margin-top: 2vh;
 }
 
 .left,
@@ -17,12 +42,13 @@ header .up {
 }
 
 .left p {
-    font-size: 29px;
+    font-size: 1.45vw;
+    line-height: 0.9vh;
 }
 
 .center {
     text-align: center;
-    line-height: 0px;
+    line-height: 10px;
 }
 
 .center img {
@@ -34,9 +60,7 @@ header .up {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    line-height: 0px;
     min-width: 160px;
-    justify-content: flex-end;
     gap: 20px;
 }
 
@@ -44,85 +68,94 @@ div.container {
     display: flex;
     border-top: #171717;
     border-top-style: solid;
-    border-width: 2px;
+    background-color: #ede8e8;
+    border-bottom: #171717;
+    border-bottom-style: solid;
+    border-width: 1px;
 }
 
 div.container a {
     flex: 1;
     text-align: center;
-    font-size: 25PX;
-    color: #333;
+    font-size: 1.4vw;
     text-decoration: none;
     padding: 10px 10px;
     position: relative;
-    z-index: 0;
     cursor: pointer;
     font-weight: 600;
+    color: #464646;
 }
 
 /* FOOTER */
-footer {
-    background: rgb(68, 68, 68);
-    color: #d8d8d8;
-    font-family: Arial, sans-serif;
-    font-size: 30px;
+.footer {
+    background: #f3f3f3;
+    padding: 3vh 0 2vh;
 }
 
 .footer-container {
     display: flex;
     justify-content: space-around;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
 }
 
-.footer-section h4 {
-    color: #e7e7e7;
+.footer-section {
+    flex: 1;
+    padding: 0 20px;
 }
 
-.footer-section p {
-    color: #ccc;
-    line-height: 1.5;
-    font-size: 22px;
+.company-info {
+    max-width: 300px;
 }
 
-
-
-/* BODY */
-body {
-    font-family: "Playfair Display", serif;
-    background: #eaeaea;
-    color: #464646;
-    padding: 0;
-    margin: 0;
+.logo-placeholder {
+    width: 60px;
+    height: 60px;
+    background: #e0e0e0;
+    border-radius: 10px;
+    margin-bottom: 10px;
 }
 
-h1 {
-    font-size: 24px;
-    margin-bottom: 30px;
-    text-align: center;
+.footer-section h4,
+.company-info h3 {
+    font-weight: bold;
+    margin-bottom: 15px;
 }
 
-h2 {
-    font-size: 20px;
-    margin-bottom: 20px;
-}
-
-ul {
+.footer-section ul {
     list-style-type: none;
     padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.footer-section ul li:before {
+    content: "";
+    margin-right: 8px;
+}
+
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid #ddd;
+    padding-top: 2vh;
+    margin-top: 20px;
+}
+
+.footer-bottom p {
+    display: inline-block;
     margin: 0;
+    font-size: 14px;
+    color: #666;
 }
 
-ul li {
-    margin-bottom: 5px;
-}
-
-p {
-    font-size: large;
-}
-
-.highlight {
-    color: #171717;
-    font-weight: bold;
-    font-size: 20px;
+.footer-bottom a {
+    margin-left: 20px;
+    color: #666;
+    text-decoration: none;
 }
 
 /* INICIO */
@@ -137,9 +170,15 @@ p {
 
 .blog {
     text-indent: 50px;
-    padding: 100px 500px;
+    padding: 10vh 30vw;
     text-align: justify;
     background-image: url(./images/clinica7.jpg);
+    background-size: cover;      /* Scale the image to cover the entire width */
+}
+
+.blog p {
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent black background */
 }
 
 /* EQUIPO */

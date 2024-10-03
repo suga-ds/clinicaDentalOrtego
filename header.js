@@ -2,7 +2,10 @@ document.addEventListener('DOMContentLoaded', function() {
     let appHeader = `
     <div class="up">
         <div class="left">
-            <p>C/ Madrazo 141. pral 1ª<br>08021, Barcelona<br>+93 209 71 67 / 34 646 272 974<br>Dentalortego@gmail.com</p>
+            <p>C/ Madrazo 141. pral 1ª</p>
+            <p>08021, Barcelona</p>
+            <p>+93 209 71 67 / 34 646 272 974</p>
+            <p>Dentalortego@gmail.com</p>
         </div>
         <div class="center">
             <img style="width: 150px; height: 116; margin: 0px 140px;"src="./images/logo2.png" alt="Logo">
