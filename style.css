@@ -1,7 +1,7 @@
 /* BODY */
 body {
     font-family: "Playfair Display", serif;
-    background: rgb(244, 244, 244);
+    background: #FFFFFF63;
     color: #464646;
     padding: 0;
     margin: 0;
@@ -64,27 +64,48 @@ header .up {
     gap: 20px;
 }
 
-div.container {
+.container {
     display: flex;
-    border-top: #171717;
-    border-top-style: solid;
-    background-color: #ede8e8;
-    border-bottom: #171717;
-    border-bottom-style: solid;
-    border-width: 1px;
+    background-color: #f5f5f5;  
+    border-top: 1px solid #171717;
+    border-bottom: 1px solid #171717;
+    justify-content: space-between;
+    padding: 1.5vh 10vw;
 }
 
-div.container a {
-    flex: 1;
-    text-align: center;
-    font-size: 1.4vw;
-    text-decoration: none;
-    padding: 10px 10px;
+.container a {
+    display: inline-block;  /* Use inline-block for animation flexibility */
     position: relative;
-    cursor: pointer;
-    font-weight: 600;
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 1.4vw;
+    z-index: 0;
     color: #464646;
+    padding: 5px 24px 5px 0;
+    cursor: pointer;
 }
+
+.container a:before {
+    content: '';
+    position: absolute;
+    left: 10px;
+    bottom: 0;
+    height: 125%;
+    width: 0;  /* Start with 0 width */
+    background-color: #d4c6e6;  /* Background animation color */
+    z-index: -1;  /* Place behind the text */
+    transition: width 0.3s ease-in-out;  /* Smooth expand animation */
+}
+
+.container a:hover:before {
+    width: 100%;  /* Expand background width on hover */
+}
+
+a {
+    text-decoration: none;
+    transition: opacity .2s ease-in-out;
+}
+
 
 /* FOOTER */
 .footer {
@@ -183,25 +204,29 @@ div.container a {
 
 /* EQUIPO */
 #title {
-    margin: 70px 0;
+    padding: 70px 0;
+}
+
+#profiles-container {
+    display: flex;
+    justify-content: center;
 }
 
 .profile-container {
     display: flex;
     flex-wrap: wrap;
+    gap: 25px;
     /* Allows items to wrap to the next line if needed */
-    justify-content: space-between;
+    justify-content: center;
     /* Spaces out the profiles evenly */
-    margin: 0 300PX;
+    max-width: 750px;
 }
 
 .profile {
     text-align: center;
-    flex-basis: calc(33.333% - 20px);
-    /* Subtracts the margin from the flex-basis */
-    margin: 10px;
-    /* Adjust margin as needed for spacing between profiles */
+    flex-basis: calc(33.333% - 20px);/* Subtracts the margin from the flex-basis */
     box-sizing: border-box;
+    margin-bottom: 4vh;
     /* Includes padding and border in the element's total width and height */
 }
 
@@ -230,7 +255,7 @@ div.container a {
     justify-content: center;
     gap: 20px;
     border-radius: 10px;
-    margin-bottom: 4vh;
+    padding-bottom: 4vh;
 }
 
 .treatment {
@@ -247,7 +272,8 @@ div.container a {
 .treatment-title {
     color: #333;
     font-size: 22px;
-    margin: 10px 0;
+    padding: 10px 0;
+    margin: 0;
 }
 
 .treatment-description {
