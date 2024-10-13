@@ -1,7 +1,7 @@
 /* BODY */
 body {
     font-family: "Playfair Display", serif;
-    background: #FFFFFF63;
+    background: #c5c5c5;
     color: #464646;
     padding: 0;
     margin: 0;
@@ -31,8 +31,7 @@ p {
 header .up {
     display: flex;
     font-weight: 600;
-    margin: 0 2vw;
-    margin-top: 2vh;
+    margin: 8vh 2vw 6vh 2vw; 
 }
 
 .left,
@@ -42,7 +41,7 @@ header .up {
 }
 
 .left p {
-    font-size: 1.45vw;
+    font-size: 1.5vw;
     line-height: 0.9vh;
 }
 
@@ -88,9 +87,9 @@ header .up {
 .container a:before {
     content: '';
     position: absolute;
-    left: 10px;
+    left: -10px;
     bottom: 0;
-    height: 125%;
+    height: 100%;
     width: 0;  /* Start with 0 width */
     background-color: #d4c6e6;  /* Background animation color */
     z-index: -1;  /* Place behind the text */
@@ -126,6 +125,10 @@ a {
     padding: 0 20px;
 }
 
+.footer-section a {
+    color: rgb(85, 85, 85)
+}
+
 .company-info {
     max-width: 300px;
 }
@@ -147,11 +150,12 @@ a {
 .footer-section ul {
     list-style-type: none;
     padding: 0;
+    color: rgb(85, 85, 85)
 }
 
 .footer-section ul li {
     margin-bottom: 10px;
-    color: #555;
+    color: rgb(85, 85, 85)
 }
 
 .footer-section ul li:before {
@@ -198,8 +202,9 @@ a {
 }
 
 .blog p {
-    padding: 10px;
+    padding: 2vw;
     background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent black background */
+    font-size: 1.5vw;
 }
 
 /* EQUIPO */

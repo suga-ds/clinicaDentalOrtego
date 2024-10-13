@@ -5,17 +5,17 @@ let appFooter = `
             <div class="footer-section company-info">
                 <img src="./images/logo2.png" alt="Company Logo" class="company-logo" style="width: 4vw;">
                 <h3>Clínica Dental Ortego</h3>
-                <p style="font-size: 1vw;">Cuidando sonrisas por generaciones, con confianza y relaciones cercanas. ¡Cada sonrisa cuenta nuestra historia!</p>
+                <p style="font-size: 1vw;">Cuidando sonrisas generación tras generación. ¡Cada sonrisa cuenta una historia!</p>
             </div>
 
             <!-- Browse Section -->
             <div class="footer-section">
                 <h4>Navegación</h4>
                 <ul>
-                    <li>Inicio</li>
-                    <li>Equipo</li>
-                    <li>Tratamientos</li>
-                    <li>Contacto</li>
+                    <li><a href="index.html">INICIO</a></li>
+                    <li><a href="equipo.html">EQUIPO</a></li>
+                    <li><a href="tratamientos.html">TRATAMIENTOS</a></li>
+                    <li><a href="contacto.html">CONTACTO</a></li>
                 </ul>
             </div>
 
@@ -41,6 +41,7 @@ let appFooter = `
                     <li>📍 C/ Madrazo 141. pral 1ª</li>
                     <li>✉️ Dentalortego@gmail.com</li>
                     <li>📞 +93 209 71 67 / 34 646 272 974</li>
+                    <li style="text-indent: 25px;">@clinicadentalortego</p></li>
                 </ul>
             </div>
         </div>
