@@ -22,10 +22,10 @@ document.addEventListener('DOMContentLoaded', function () {
     </div>
 
     <div class="container purple topBottomBordersIn">
-        <a href="index.html">INICIO</a>
-        <a href="equipo.html">EQUIPO</a>
-        <a href="tratamientos.html">TRATAMIENTOS</a>
-        <a href="contacto.html">CONTACTO</a>
+        <a href="./es/index.html">INICIO</a>
+        <a href="./es/equipo.html">EQUIPO</a>
+        <a href="./es/tratamientos.html">TRATAMIENTOS</a>
+        <a href="./es/contacto.html">CONTACTO</a>
     </div>
 
     <!-- Floating Buttons -->
