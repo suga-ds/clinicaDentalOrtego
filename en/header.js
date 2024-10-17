@@ -8,22 +8,29 @@ document.addEventListener('DOMContentLoaded', function() {
             <p>dentalortego@gmail.com</p>
         </div>
         <div class="center">
-            <img style="width: 150px; height: 116; margin: 0px 140px;"src="./images/logo2.png" alt="Logo">
+            <img style="width: 150px; height: 116; margin: 0px 140px;"src="../images/logo2.png" alt="Logo">
             <p style="font-size: 29px;"><span style="font-size: 35px;">C</span>L<span style="font-size: 29px;">Í</span>NICA <span style="font-size: 35px;">D</span>ENTAL <span style="font-size: 35px;">O</span>RTEGO</p>
         </div>
         <div class="right">
+            <a href="../es/index.html">ES</a>
+            <a href="../en/index.html">EN</a>
+            <a href="../ca/index.html">CA</a>
         </div>
     </div>
 
     <div class="container purple topBotomBordersIn">
         <a href="index.html">INICIO</a>
-        <a href="equipo.html">EQUIPO</a>
-        <a href="tratamientos.html">TRATAMIENTOS</a>
-        <a href="contacto.html">CONTACTO</a>
+        <a href="team.html">EQUIPO</a>
+        <a href="treatments.html">TRATAMIENTOS</a>
+        <a href="contact.html">CONTACTO</a>
     </div>
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/34646272974" target="_blank" class="whatsapp-button">
+      <img src="../images/whatsapp_icon.png" style="height: 4vw;"alt="WhatsApp Chat" />
+    </a>
     `;
     document.getElementById("app-header").innerHTML = appHeader;
 });
 
 
-//         <a href="instalaciones.html">INSTALACIONES</a> whatsapp plugin ( whatsapp API ) traduccion esp ca eng hacer publico color scheme 
+// <a href="instalaciones.html">INSTALACIONES</a> // whatsapp plugin ( whatsapp API ) // traduccion esp ca eng 

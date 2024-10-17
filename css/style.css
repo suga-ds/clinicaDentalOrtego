@@ -61,6 +61,13 @@ header .up {
     justify-content: flex-end;
     min-width: 160px;
     gap: 20px;
+    font-size: 2vw;
+    text-decoration: none;
+}
+
+.right a {
+    color: #464646;
+    text-decoration: none;
 }
 
 .container {
@@ -104,6 +111,14 @@ a {
     text-decoration: none;
     transition: opacity .2s ease-in-out;
 }
+
+.whatsapp-button {
+    position: fixed;
+    bottom: 2vw;
+    right: 6vh;
+    z-index: 100;
+}
+
 
 
 /* FOOTER */
@@ -197,7 +212,7 @@ a {
     text-indent: 50px;
     padding: 10vh 30vw;
     text-align: justify;
-    background-image: url(./images/clinica7.jpg);
+    background-image: url(../images/clinica7.jpg);
     background-size: cover;      /* Scale the image to cover the entire width */
 }
 
