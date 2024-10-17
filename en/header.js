@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     let appHeader = `
     <div class="up">
         <div class="left">
@@ -8,8 +8,11 @@ document.addEventListener('DOMContentLoaded', function() {
             <p>dentalortego@gmail.com</p>
         </div>
         <div class="center">
-            <img style="width: 150px; height: 116; margin: 0px 140px;"src="../images/logo2.png" alt="Logo">
-            <p style="font-size: 29px;"><span style="font-size: 35px;">C</span>L<span style="font-size: 29px;">Í</span>NICA <span style="font-size: 35px;">D</span>ENTAL <span style="font-size: 35px;">O</span>RTEGO</p>
+            <img style="width: 150px; height: 116px; margin: 0 140px;" src="../images/logo2.png" alt="Logo">
+            <p style="font-size: 29px;">
+                <span style="font-size: 35px;">C</span>L<span style="font-size: 29px;">Í</span>NICA 
+                <span style="font-size: 35px;">D</span>ENTAL <span style="font-size: 35px;">O</span>RTEGO
+            </p>
         </div>
         <div class="right">
             <a href="../es/index.html">ES</a>
@@ -18,19 +21,26 @@ document.addEventListener('DOMContentLoaded', function() {
         </div>
     </div>
 
-    <div class="container purple topBotomBordersIn">
+    <div class="container purple topBottomBordersIn">
         <a href="index.html">INICIO</a>
         <a href="team.html">EQUIPO</a>
         <a href="treatments.html">TRATAMIENTOS</a>
         <a href="contact.html">CONTACTO</a>
     </div>
-    <!-- Floating WhatsApp Button -->
-    <a href="https://wa.me/34646272974" target="_blank" class="whatsapp-button">
-      <img src="../images/whatsapp_icon.png" style="height: 4vw;"alt="WhatsApp Chat" />
-    </a>
+
+    <!-- Floating Buttons -->
+    <div class="floating-icons">
+        <a href="mailto:dentalortego@gmail.com" class="floating-button email">
+            ✉ Escríbenos
+        </a>
+        <a href="https://wa.me/34646272974" target="_blank" class="floating-button whatsapp">
+            💬 WhatsApp
+        </a>
+        <a href="tel:+34932097167" class="floating-button phone">
+            📞 Llámanos
+        </a>
+    </div>
     `;
+
     document.getElementById("app-header").innerHTML = appHeader;
 });
-
-
-// <a href="instalaciones.html">INSTALACIONES</a> // whatsapp plugin ( whatsapp API ) // traduccion esp ca eng 

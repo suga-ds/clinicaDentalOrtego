@@ -28,10 +28,19 @@ document.addEventListener('DOMContentLoaded', function () {
         <a href="contacto.html">CONTACTO</a>
     </div>
 
-    <!-- Floating WhatsApp Button -->
-    <a href="https://wa.me/34646272974" target="_blank" class="whatsapp-button">
-        <img src="../images/whatsapp_icon.png" style="height: 4vw;" alt="WhatsApp Chat">
-    </a>
+    <!-- Floating Buttons -->
+    <div class="floating-icons">
+        <a href="mailto:dentalortego@gmail.com" class="floating-button email">
+            ✉ Escríbenos
+        </a>
+        <a href="https://wa.me/34646272974" target="_blank" class="floating-button whatsapp">
+            💬 WhatsApp
+        </a>
+        <a href="tel:+34932097167" class="floating-button phone">
+            📞 Llámanos
+        </a>
+    </div>
     `;
+
     document.getElementById("app-header").innerHTML = appHeader;
 });
