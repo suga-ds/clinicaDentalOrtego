@@ -20,14 +20,7 @@ document.addEventListener('DOMContentLoaded', function () {
             <a href="../ca/index.html">CA</a>
         </div>
     </div>
-
-    <div class="container purple topBottomBordersIn">
-        <a href="index.html">INICIO</a>
-        <a href="team.html">EQUIPO</a>
-        <a href="treatments.html">TRATAMIENTOS</a>
-        <a href="contact.html">CONTACTO</a>
-    </div>
-
+    
     <!-- Floating Buttons -->
     <div class="floating-icons">
         <a href="mailto:dentalortego@gmail.com" class="floating-button email">
