@@ -1,8 +1,8 @@
 /* BODY */
 body {
     font-family: "Playfair Display", serif;
-    background: #c5c5c5;
-    color: #464646;
+    background: #c6c6c6;
+    color: #333333;
     padding: 0;
     margin: 0;
 }
@@ -51,17 +51,18 @@ header .up {
 }
 
 .center img {
-    width: 110px;
+    width: 150px;
     margin: 0px auto;
+    padding-top: 100px;
 }
 
 .right {
     display: flex;
-    align-items: center;
-    justify-content: flex-end;
+    flex-direction: column;
+    align-items: end;
     min-width: 160px;
-    gap: 20px;
-    font-size: 2vw;
+    gap: 10px;
+    font-size: 1.5vw;
     text-decoration: none;
 }
 
@@ -72,11 +73,10 @@ header .up {
 
 .container {
     display: flex;
-    background-color: #f5f5f5;  
-    border-top: 1px solid #171717;
-    border-bottom: 1px solid #171717;
+    flex-direction: column;
     justify-content: space-between;
     padding: 1.5vh 10vw;
+    margin: auto 70vw auto auto;
 }
 
 .container a {
@@ -114,17 +114,17 @@ a {
 
 .whatsapp-button {
     position: fixed;
-    bottom: 2vw;
+    top: 2vw;
     right: 6vh;
-    z-index: 100;
+    z-index: 1;
 }
 
 /* Floating Buttons */
 .floating-icons {
     position: fixed;
-    left: 0;
-    top: 50%;
-    z-index: 1000;
+    right: 0;
+    top: 60%;
+    z-index: 1;
     display: flex;
     flex-direction: column;
 }
@@ -151,7 +151,7 @@ a {
 }
 
 .floating-button.phone {
-    background-color: #d32f2f; /* Red for call button */
+    background-color: #ead6d6; /* Red for call button */
 }
 
 .floating-button:hover {
