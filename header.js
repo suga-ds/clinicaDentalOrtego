@@ -24,12 +24,12 @@ document.addEventListener('DOMContentLoaded', function () {
     <!-- Floating Buttons -->
     <div class="floating-icons">
             <a href="tel:+34932097167" class="floating-button phone">
-            📞
+            <img src="../images/phone.png" style="height: 20px;"></img>
         </a>
         <a href="https://wa.me/34646272974" target="_blank" class="floating-button whatsapp">
-            <img src="../images/whatsapp-logo.png" style="height: 35px;"></img>
+            <img src="../images/whatsapp-logo.png" style="height: 22px;"></img>
         </a>
-        <a href="mailto:dentalortego@gmail.com" class="floating-button email">
+        <a href="mailto:clinicadentalortego@gmail.com" class="floating-button email">
             ✉
         </a>
 

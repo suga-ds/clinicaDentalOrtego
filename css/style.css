@@ -62,7 +62,7 @@ header .up {
     align-items: end;
     min-width: 160px;
     gap: 10px;
-    font-size: 1.5vw;
+    font-size: 2vw;
     text-decoration: none;
 }
 
@@ -174,8 +174,8 @@ a {
 }
 
 .footer-section {
-    flex: 1;
     padding: 0 20px;
+    font-size: 1.6vw;
 }
 
 .footer-section a {
@@ -183,7 +183,8 @@ a {
 }
 
 .company-info {
-    max-width: 300px;
+    max-width: 400px;
+    min-width: 24vw;
 }
 
 .logo-placeholder {
@@ -227,7 +228,7 @@ a {
     display: inline-block;
     margin: 0;
     font-size: 14px;
-    color: #666;
+    color: #707070;
 }
 
 .footer-bottom a {
@@ -266,8 +267,11 @@ a {
 
 
 /* EQUIPO */
-#title {
-    padding: 70px 0;
+#team-title {
+    text-align: center;
+    font-size: 1.5vw;
+    font-weight: 900;
+    margin: 12vh 0;
 }
 
 #profiles-container {
@@ -309,6 +313,10 @@ a {
 .profile h3 {
     margin-top: 10px;
     font-size: 18px;
+}
+
+.profile p {
+    color: #333333c8;
 }
 
 
@@ -364,12 +372,13 @@ a {
 .contacto {
     display: flex;
     align-items: center;
+    padding: 5vh 4vw;
 }
 
 .info-section {
-    flex: 1;
     padding: 20px 0;
     min-width: 300px;
+    max-width: 500px;
 }
 
 .info-block {
@@ -377,7 +386,6 @@ a {
     padding: 20px;
     border-radius: 5px;
     width: 100%;
-    /* Ensures it fills the width of its parent, .info-section */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     text-align: center;
     margin-bottom: 2vh;
