@@ -1,22 +1,22 @@
 let appFooter = `
-    <footer style="font-family: "Playfair Display", serif;" class="footer">
+    <footer class="footer">
         <div class="footer-container">
             <!-- Company Section -->
             <div class="footer-section company-info">
                 <div style="display: flex; justify-content: center;"><img src="../images/logo2.png" alt="Company Logo" class="company-logo" style="width: 6vw;"></div>
                 <h2>Clínica Dental Ortego</h2>
-                <p style="">"Cuidando sonrisas generación tras generación. ¡Cada sonrisa cuenta una historia!"</p>
+                <p style="color: #696969;">"Cuidando sonrisas generación tras generación. ¡Cada sonrisa cuenta una historia!"</p>
             </div>
 
             <!-- Browse Section -->
             <div class="footer-section">
                 <h4>Navegación</h4>
                 <ul>
-                    <li><a href="index.html">INICIO</a></li>
-                    <li><a href="equipo.html">EQUIPO</a></li>
-                    <li><a href="tratamientos.html">TRATAMIENTOS</a></li>
-                    <li><a href="instalaciones.html">INSTALACIONES</a></li>
-                    <li><a href="contacto.html">CONTACTO</a></li>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="equipo.html">Equipo</a></li>
+                    <li><a href="tratamientos.html">Tratamientos</a></li>
+                    <li><a href="instalaciones.html">Instalaciones</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
                 </ul>
             </div>
 
@@ -37,7 +37,7 @@ let appFooter = `
             </div>
 
             <!-- Contact Section -->
-            <div class="footer-section" style="min-width: 25vw">
+            <div class="footer-section"">
                 <h4>Contacto</h4>
                 <ul>
                     <li>📍 C/ Madrazo 141. pral 1ª</li>
@@ -50,6 +50,7 @@ let appFooter = `
         <div class="footer-bottom">
             <p>© Copyright 2024</p>
             <a href="#">Privacy Policy</a>
+            <p>Website Designed by <span href="https://dexifra.com">dexifra</span></p>
         </div>
     </footer>
 `;

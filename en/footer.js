@@ -1,48 +1,48 @@
 let appFooter = `
-    <footer style="font-family: "Playfair Display", serif;" class="footer">
+    <footer class="footer">
         <div class="footer-container">
             <!-- Company Section -->
             <div class="footer-section company-info">
                 <div style="display: flex; justify-content: center;"><img src="../images/logo2.png" alt="Company Logo" class="company-logo" style="width: 6vw;"></div>
-                <h2>Clínica Dental Ortego</h2>
-                <p style="">"Cuidando sonrisas generación tras generación. ¡Cada sonrisa cuenta una historia!"</p>
+                <h2>Ortego Dental Clinic</h2>
+                <p style="color: #696969;">"Caring for smiles generation after generation. Every smile tells a story!"</p>
             </div>
 
             <!-- Browse Section -->
             <div class="footer-section">
-                <h4>Navegación</h4>
+                <h4>Navigation</h4>
                 <ul>
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="team.html">TEAM</a></li>
-                    <li><a href="tratments.html">TREATMENTS</a></li>
-                    <li><a href="instalations.html">INSTALATIONS</a></li>
-                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="equipo.html">Team</a></li>
+                    <li><a href="tratamientos.html">Treatments</a></li>
+                    <li><a href="instalaciones.html">Facilities</a></li>
+                    <li><a href="contacto.html">Contact</a></li>
                 </ul>
             </div>
 
             <!-- Services Section -->
             <div class="footer-section">
-                <h4>Servicios</h4>
+                <h4>Services</h4>
                 <ul>
-                    <li>Estética Dental</li>
-                    <li>Implantología</li>
-                    <li>Odontopediatría</li>
-                    <li>Higiene Dental</li>
-                    <li>Endodoncia</li>
-                    <li>Periodoncia</li>
-                    <li>Prótesis Dental</li>
-                    <li>Rehabilitación Oral</li>
-                    <li>Restauradora</li>
+                    <li>Dental Aesthetics</li>
+                    <li>Implantology</li>
+                    <li>Pediatric Dentistry</li>
+                    <li>Dental Hygiene</li>
+                    <li>Endodontics</li>
+                    <li>Periodontics</li>
+                    <li>Dental Prosthetics</li>
+                    <li>Oral Rehabilitation</li>
+                    <li>Restorative Dentistry</li>
                 </ul>
             </div>
 
             <!-- Contact Section -->
-            <div class="footer-section" style="min-width: 25vw">
-                <h4>Contacto</h4>
+            <div class="footer-section">
+                <h4>Contact</h4>
                 <ul>
                     <li>📍 C/ Madrazo 141. pral 1ª</li>
                     <li>✉️ clinicadentalortego@gmail.com</li>
-                    <li>📞 +93 209 71 67</li>
+                    <li>☎️ +93 209 71 67</li>
                     <li>📞 +34 646 272 974</li>
                 </ul>
             </div>
@@ -50,6 +50,7 @@ let appFooter = `
         <div class="footer-bottom">
             <p>© Copyright 2024</p>
             <a href="#">Privacy Policy</a>
+            <p>Website Designed by <span href="https://dexifra.com">dexifra</span></p>
         </div>
     </footer>
 `;
