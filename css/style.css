@@ -5,7 +5,7 @@ body {
     color: #464646;
     padding: 0;
     margin: 0;
-    margin-left: 12vw;
+    margin-left: 15vw;
 }
 
 p {
@@ -18,7 +18,7 @@ p {
     justify-content: space-between;
     border-bottom: 1px solid #464646;
     margin: 0vh 5vw;
-    padding: 2vh 0;
+    padding: 5vh 0;
     align-items: center; /* Vertically centers content */
 }
 
@@ -27,7 +27,8 @@ p {
     margin: 0; /* Remove default margin */
     display: flex; /* Display items in a horizontal row */
     gap: 2vw; /* Adds space between each item */
-    font-size: 1.3vw;
+    font-size: 1.5vw;
+    font-weight: 900;
 }
 
 #contact-info li {
@@ -47,6 +48,7 @@ p {
     border: none;
     cursor: pointer;
     font-size: 1vw;
+    font-weight: 900;
 }
 
 .dropdown-content {
@@ -84,7 +86,7 @@ p {
     position: fixed;
     top: 0;
     left: 0;
-    width: 12vw;
+    width: 15vw;
     height: 100%;
     background-color: #333;
     color: white;
@@ -102,7 +104,7 @@ p {
     color: white;
     padding: 15px 20px;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 1.5vw;
 }
 
 .sidebar a:hover {
@@ -203,6 +205,7 @@ p {
 .company-info h3 {
     font-weight: bold;
     margin-bottom: 15px;
+    font-size: 2.2vw;
 }
 
 .footer-section ul {
@@ -238,30 +241,50 @@ p {
 /* INICIO */
 
 #blog-text {
-    text-indent: 5vw;
+    position: relative;                  /* Position context for pseudo-element */
+    background-image: url(../images/installations/image2.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: brightness(120%);
     text-align: justify;
+    padding: 20vh 20vw;
+    color: #fff;                         /* Change text color to white */
+    font-weight: 700;                    /* Increase font weight for better readability */
+}
+
+/* Add a semi-transparent overlay */
+#blog-text::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay with 50% opacity */
+    z-index: 0;                           /* Position behind the text */
 }
 
 #blog-text p {
-    font-size: 1.5vw;
-    padding: 5vh 20vw;
+    background-color: rgba(255, 255, 255, 0.6);  /* Dark background with 60% opacity */
+    padding: 5vw;
+    position: relative;
+    z-index: 1;                           /* Position text above overlay */
+    padding: 1vh 0;                       /* Add padding around paragraphs */
+    color: #333;
 }
 
-#blog-text img {
-    width: 100%; 
-    height: 50vh;
-    object-fit: cover;
-}
 
 /* EQUIPO */
 
 #team-photo {
     display: flex;
+    margin-top: 10vh;
     align-items: center;
 }
 
 #team-photo img {
-    width: 40vw;
+    width: 55vw;
     border-radius: 10px;
 }
 
@@ -275,7 +298,7 @@ p {
 #profiles-container {
     display: flex;
     justify-content: center;
-    margin: auto 20vw;
+    margin: auto 10vw;
 }
 
 .profile-container {

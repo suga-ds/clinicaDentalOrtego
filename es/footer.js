@@ -42,7 +42,7 @@ let appFooter = `
                 <ul>
                     <li>📍 C/ Madrazo 141. pral 1ª</li>
                     <li>✉️ clinicadentalortego@gmail.com</li>
-                    <li>☎️ +93 209 71 67</li>
+                    <li>☎️ +34 932 097 167</li>
                     <li>📞 +34 646 272 974</li>
                 </ul>
             </div>
