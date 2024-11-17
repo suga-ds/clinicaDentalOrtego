@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function () {
     </div>
 
     <div id="logo-title">
-        <img style="width: 200px; margin: 0 140px;" src="../images/logo2.png" alt="Logo">
+        <img style="width: 200px; margin: 0 140px;" src="../images/logo-black.png" alt="Logo">
         <h1 style="font-size: 35px;">
             <span style="font-size: 45px;">C</span>L<span style="font-size: 35px;">Í</span>NICA 
             <span style="font-size: 45px;">D</span>ENTAL <span style="font-size: 45px;">O</span>RTEGO

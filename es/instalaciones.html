@@ -18,7 +18,7 @@
     <script src="../header.js"></script>
 
     <div class="sidebar">
-        <img src="../images/logo2.png" alt="logo" style="height: 50px;">
+        <img src="../images/logo-white.png" alt="logo" style="height: 50px;">
         <a href="index.html">INICIO</a>
         <a href="equipo.html">EQUIPO</a>
         <a href="tratamientos.html">TRATAMIENTOS</a>
@@ -46,6 +46,9 @@
                 <div class="slide"><img src="../images/installations/image15.jpeg" alt="Image 9"></div>
                 <div class="slide"><img src="../images/installations/image16.jpeg" alt="Image 9"></div>
                 <div class="slide"><img src="../images/installations/image17.jpeg" alt="Image 1"></div>
+                <div class="slide"><img src="../images/installations/image18.jpeg" alt="Image 1"></div>
+                <div class="slide"><img src="../images/installations/image19.jpeg" alt="Image 1"></div>
+                <div class="slide"><img src="../images/installations/image20.jpeg" alt="Image 1"></div>
 
             </div>
             <div class="navigation">
@@ -58,8 +61,11 @@
     <script>
         let currentIndex = 0;
         const slider = document.getElementById('slider');
+        const slideWidth = document.querySelector('.slide').offsetWidth; // Dynamically get slide width (20vw)
+        const slideGap = parseFloat(getComputedStyle(slider).gap); // Dynamically get gap size (1vw)
         const totalSlides = document.querySelectorAll('.slide').length;
-        const slidesVisible = 3;
+        const sliderContainerWidth = document.querySelector('.slider-container').offsetWidth;
+        const slidesVisible = Math.floor(sliderContainerWidth / (slideWidth + slideGap)); // Visible slides based on container width
 
         function scrollSlider(step) {
             currentIndex += step;
@@ -68,8 +74,17 @@
             } else if (currentIndex > totalSlides - slidesVisible) {
                 currentIndex = totalSlides - slidesVisible;
             }
-            slider.style.transform = `translateX(-${currentIndex * 500}px)`;
+            slider.style.transform = `translateX(-${currentIndex * (slideWidth + slideGap)}px)`;
         }
+
+        // Recalculate slide width and visible slides on window resize
+        window.addEventListener('resize', () => {
+            const newSlideWidth = document.querySelector('.slide').offsetWidth;
+            const newSliderContainerWidth = document.querySelector('.slider-container').offsetWidth;
+            const newSlideGap = parseFloat(getComputedStyle(slider).gap);
+            slidesVisible = Math.floor(newSliderContainerWidth / (newSlideWidth + newSlideGap));
+            scrollSlider(0); // Reset to current index to re-align the slider
+        });
     </script>
 
     <footer id="app-footer"></footer>
