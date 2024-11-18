@@ -3,7 +3,7 @@ let appFooter = `
         <div class="footer-container">
             <!-- Company Section -->
             <div class="footer-section company-info">
-                <div style="display: flex; justify-content: center;"><img src="../images/logo2.png" alt="Logotip de l'empresa" class="company-logo" style="width: 6vw;"></div>
+                <div style="display: flex; justify-content: center;"><img src="../images/logo-black.png" alt="Logotip de l'empresa" class="company-logo" style="width: 6vw;"></div>
                 <h2>Clínica Dental Ortego</h2>
                 <p style="color: #696969;">"Cuidant somriures generació rere generació. Cada somriure explica una història!"</p>
             </div>

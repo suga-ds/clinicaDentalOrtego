@@ -18,11 +18,11 @@
     <script src="../header.js"></script>
 
     <div class="sidebar">
-        <img src="../images/logo2.png" alt="logo" style="height: 50px;">
+        <img src="../images/logo-white.png" alt="logo" style="height: 50px;">
         <a href="index.html">HOME</a>
         <a href="team.html">TEAM</a>
         <a href="treatments.html">TREATMENTS</a>
-        <a href="instalations.html">INSTALLATIONS</a>
+        <a href="instalations.html">INSTALATIONS</a>
         <a href="contact.html">CONTACT</a>
     </div>
 
@@ -38,10 +38,20 @@
                 <div class="slide"><img src="../images/installations/image7.jpeg" alt="Image 7"></div>
                 <div class="slide"><img src="../images/installations/image8.jpeg" alt="Image 8"></div>
                 <div class="slide"><img src="../images/installations/image9.jpeg" alt="Image 9"></div>
+                <div class="slide"><img src="../images/installations/image10.jpeg" alt="Image 9"></div>
+                <div class="slide"><img src="../images/installations/image11.jpeg" alt="Image 9"></div>
+                <div class="slide"><img src="../images/installations/image12.jpeg" alt="Image 9"></div>
+                <div class="slide"><img src="../images/installations/image13.jpeg" alt="Image 9"></div>
+                <div class="slide"><img src="../images/installations/image14.jpeg" alt="Image 9"></div>
+                <div class="slide"><img src="../images/installations/image15.jpeg" alt="Image 9"></div>
+                <div class="slide"><img src="../images/installations/image16.jpeg" alt="Image 9"></div>
+                <div class="slide"><img src="../images/installations/image17.jpeg" alt="Image 1"></div>
+                <div class="slide"><img src="../images/installations/image18.jpeg" alt="Image 1"></div>
+                <div class="slide"><img src="../images/installations/image19.jpeg" alt="Image 1"></div>
             </div>
             <div class="navigation">
-                <button class="nav-button" onclick="scrollSlider(-3)">Anterior</button>
-                <button class="nav-button" onclick="scrollSlider(3)">Siguiente</button>
+                <button class="nav-button" onclick="scrollSlider(-3)">Previous</button>
+                <button class="nav-button" onclick="scrollSlider(3)">Next</button>
             </div>
         </div>
     </div>
@@ -49,8 +59,11 @@
     <script>
         let currentIndex = 0;
         const slider = document.getElementById('slider');
+        const slideWidth = document.querySelector('.slide').offsetWidth; // Dynamically get slide width (20vw)
+        const slideGap = parseFloat(getComputedStyle(slider).gap); // Dynamically get gap size (1vw)
         const totalSlides = document.querySelectorAll('.slide').length;
-        const slidesVisible = 3;
+        const sliderContainerWidth = document.querySelector('.slider-container').offsetWidth;
+        const slidesVisible = Math.floor(sliderContainerWidth / (slideWidth + slideGap)); // Visible slides based on container width
 
         function scrollSlider(step) {
             currentIndex += step;
@@ -59,8 +72,17 @@
             } else if (currentIndex > totalSlides - slidesVisible) {
                 currentIndex = totalSlides - slidesVisible;
             }
-            slider.style.transform = `translateX(-${currentIndex * 550}px)`;
+            slider.style.transform = `translateX(-${currentIndex * (slideWidth + slideGap)}px)`;
         }
+
+        // Recalculate slide width and visible slides on window resize
+        window.addEventListener('resize', () => {
+            const newSlideWidth = document.querySelector('.slide').offsetWidth;
+            const newSliderContainerWidth = document.querySelector('.slider-container').offsetWidth;
+            const newSlideGap = parseFloat(getComputedStyle(slider).gap);
+            slidesVisible = Math.floor(newSliderContainerWidth / (newSlideWidth + newSlideGap));
+            scrollSlider(0); // Reset to current index to re-align the slider
+        });
     </script>
 
     <footer id="app-footer"></footer>

@@ -9,7 +9,7 @@ body {
 }
 
 p {
-    font-size: 1.3vw;
+    font-size: 1.6vw;
 }
 
 /* Header */
@@ -49,7 +49,7 @@ p {
     cursor: pointer;
     font-size: 1vw;
     font-weight: 900;
-    width: 5vw;
+    width: 6vw;
 }
 
 .dropdown-content {
@@ -58,7 +58,7 @@ p {
     background-color: #f9f9f9;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
-    width: 5vw;
+    width: 6vw;
 }
 
 .dropdown-content a {
@@ -82,7 +82,15 @@ p {
     margin-top: 5vh;
 }
 
-/* Style for the fixed left sidebar */
+#logo-title h1 {
+    font-size: 35px;
+}
+
+.font-size {
+    font-size: 3.2vw;
+}
+
+/* Sidebar default styles */
 .sidebar {
     position: fixed;
     top: 0;
@@ -93,10 +101,15 @@ p {
     color: white;
     padding-top: 20px;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
- }
+    transition: transform 0.3s ease-in-out;
+}
 
 .sidebar img {
     margin: 15px 20px;
+}
+
+.sidebar .menu {
+    display: block;
 }
 
 /* Navigation link styles */
@@ -112,19 +125,6 @@ p {
     background-color: #575757;
 }
 
-/* Main content area */
-.content {
-    margin-left: 220px;
-    padding: 20px;
-}
-
-.whatsapp-button {
-    position: fixed;
-    top: 2vw;
-    right: 6vh;
-    z-index: 1;
-}
-
 /* Floating Buttons */
 .floating-icons {
     position: fixed;
@@ -137,7 +137,7 @@ p {
 
 .floating-button {
     display: block;
-    padding: 10px 15px;
+    padding: 1vh;
     margin-bottom: 5px;
     text-align: center;
     color: #fff;
@@ -146,6 +146,11 @@ p {
     text-decoration: none;
     transition: background-color 0.3s ease;
     border-radius: 5px 0 0 5px;
+    font-size: 1.7vw;
+}
+
+.floating-icons a img {
+    width: 1.5vw;
 }
 
 .floating-button.email {
@@ -159,7 +164,7 @@ p {
 }
 
 .floating-button.phone {
-    background-color: #ead6d6;
+    background-color: #e15c5c;
     /* Red for call button */
 }
 
@@ -298,7 +303,7 @@ p {
 #profiles-container {
     display: flex;
     justify-content: center;
-    margin: auto 10vw;
+    margin: 10vh 10vw;
 }
 
 .profile-container {
@@ -326,11 +331,12 @@ p {
 }
 
 .profile h3 {
-    margin-top: 10px;
-    font-size: 18px;
+    margin-top: 4vh;    
+    font-size: 1.6vw;
 }
 
 .profile p {
+    margin-top: 4h;
     color: #6b6b6b;
 }
 
@@ -339,33 +345,30 @@ p {
 
 .treatments-container {
     display: flex;
-    flex-wrap: wrap; /* Enable wrapping */
+    flex-wrap: wrap;
     justify-content: center;
-    padding: 5vh 0;
-    margin: 0 10vw;
+    margin: 10vh 10vw;
     gap: 1vw;
 }
 
 .treatment {
     min-width: 5vw;
-    max-width: 14vw;
+    max-width: 30vw;
     text-align: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     background: rgb(255, 255, 255);
     padding: 12px;
-    min-width: 250px;
 }
 
 .treatment-title {
     color: #333;
-    font-size: 22px;
+    font-size: 2.5vw;
     padding: 10px 0;
     margin: 0;
 }
 
 .treatment-description {
     color: #666;
-    font-size: 16px;
     margin-bottom: 20px;
 }
 
@@ -392,11 +395,11 @@ p {
 .slider {
     display: flex;
     transition: transform 0.5s ease-in-out;
-    gap: 1vw; /* Consistent spacing between slides */
+    gap: 2vw; /* Consistent spacing between slides */
 }
 
 .slide {
-    flex: 0 0 20vw; /* Fixed slide width */
+    flex: 0 0 30vw; /* Fixed slide width */
     height: 600px; /* Fixed slide height */
     box-sizing: border-box;
 }
@@ -407,6 +410,11 @@ p {
     object-fit: cover; /* Crop and center the image */
     display: block;
     border-radius: 10px;
+}
+
+.nav-button {
+    font-size: 1.2vw;
+    margin-top: 1vh;
 }
 
 
@@ -451,19 +459,60 @@ p {
 
 /* MEDIA QUERIES */
 
-@media (max-width: 1000px) {
+@media (max-width: 1100px) {
 
     body {
-        margin-left: 20vw;
+        margin-left: 0;
     }
 
-    .sidebar {
+    p {
+        font-size: 2vh;
+    }
+
+    /* Header */
+
+    #contact-info ul {
+        flex-direction: column;
+    }
+
+    #contact-info ul li {
+        font-size: 1.5vh;
+    }
+
+    .dropdown-button {
+        font-size: 1.5vh;
         width: 20vw;
     }
 
-    #team-title {
-        margin: 3vh 0; /* Example adjustment for smaller screens */
+    .dropdown-content {
+        width: 20vw;
+        font-size: 1.7vh;
+    }
+
+    #logo-title h1 {
+        font-size: 3vh;
+    }
+
+    .font-size {
+        font-size: 3.5vh;
+    }
+    
+    .floating-button {
+        font-size: 2vh;
+    }
+
+    .floating-icons a img {
+        width: 2vh;
+    }
+
+    /* INICIO */
+
+    #blog-text {
+        padding: 10vh 10vw;
     }
 
 
+    .sidebar {
+        display: none;
+    }
 }

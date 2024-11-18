@@ -20,20 +20,19 @@ document.addEventListener('DOMContentLoaded', function () {
 
     <div id="logo-title">
         <img style="width: 200px; margin: 0 140px;" src="../images/logo-black.png" alt="Logo">
-        <h1 style="font-size: 35px;">
-            <span style="font-size: 45px;">C</span>L<span style="font-size: 35px;">Í</span>NICA 
-            <span style="font-size: 45px;">D</span>ENTAL <span style="font-size: 45px;">O</span>RTEGO
+        <h1>
+            <span class="font-size">C</span>LÍNICA <span class="font-size">D</span>ENTAL <span class="font-size">O</span>RTEGO
         </h1>
     </div>
 
 
     <!-- Floating Buttons -->
     <div class="floating-icons">
-            <a href="tel:+34932097167" class="floating-button phone">
-            📞
+        <a href="tel:+34932097167" class="floating-button phone">
+            <img src="../images/phone-logo.png"></img>
         </a>
         <a href="https://wa.me/34646272974" target="_blank" class="floating-button whatsapp">
-            <img src="../images/whatsapp-logo.png" style="height: 22px;"></img>
+            <img src="../images/whatsapp-logo.png"></img>
         </a>
         <a href="mailto:clinicadentalortego@gmail.com" class="floating-button email">
             ✉

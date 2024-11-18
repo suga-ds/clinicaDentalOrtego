@@ -19,13 +19,15 @@
 
     <div class="sidebar">
         <img src="../images/logo-white.png" alt="logo" style="height: 50px;">
-        <a href="index.html">INICIO</a>
-        <a href="equipo.html">EQUIPO</a>
-        <a href="tratamientos.html">TRATAMIENTOS</a>
-        <a href="instalaciones.html">INSTALACIONES</a>
-        <a href="contacto.html">CONTACTO</a>
+        <nav class="menu">
+            <a href="index.html">INICIO</a>
+            <a href="equipo.html">EQUIPO</a>
+            <a href="tratamientos.html">TRATAMIENTOS</a>
+            <a href="instalaciones.html">INSTALACIONES</a>
+            <a href="contacto.html">CONTACTO</a>
+        </nav>
     </div>
-
+    
     <div id="blog-text">
         
             <p>La Clínica Dental Ortego fue fundada en 1964 en Barcelona, en el barrio de Galvany (Sarrià-Sant Gervasi), por
@@ -38,6 +40,15 @@
                 la seguridad de que el plan de tratamiento personalizado que les ofrecemos es, sin duda, la mejor opción
                 para ellos.</p>
     </div>
+
+    <script>
+        function toggleSidebar() {
+            const sidebar = document.querySelector('.sidebar');
+            const menu = document.querySelector('.menu');
+            sidebar.classList.toggle('active');
+            menu.classList.toggle('active');
+        }
+    </script>
 
 
     <footer id="app-footer"></footer>
