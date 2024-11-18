@@ -347,7 +347,7 @@ p {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 10vh 10vw;
+    margin: 10vh 8vw;
     gap: 1vw;
 }
 
