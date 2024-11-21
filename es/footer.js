@@ -9,7 +9,7 @@ let appFooter = `
             </div>
 
             <!-- Browse Section -->
-            <div class="footer-section">
+            <div class="footer-section nav-footer">
                 <h4>Navegación</h4>
                 <ul>
                     <li><a href="index.html">Inicio</a></li>

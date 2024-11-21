@@ -27,6 +27,10 @@
             <a href="contacto.html">CONTACTO</a>
         </nav>
     </div>
+
+    <!-- Hamburger Button -->
+    <button class="hamburger">☰</button>
+
     
     <div id="blog-text">
         
@@ -41,15 +45,19 @@
                 para ellos.</p>
     </div>
 
-    <script>
-        function toggleSidebar() {
+    <script defer>
+        document.addEventListener('DOMContentLoaded', function () {
+            const hamburger = document.querySelector('.hamburger');
             const sidebar = document.querySelector('.sidebar');
-            const menu = document.querySelector('.menu');
-            sidebar.classList.toggle('active');
-            menu.classList.toggle('active');
-        }
+    
+            if (hamburger && sidebar) {
+                hamburger.addEventListener('click', function () {
+                    sidebar.classList.toggle('active');
+                });
+            }
+        });
     </script>
-
+    
 
     <footer id="app-footer"></footer>
     <script async src="footer.js"></script>
