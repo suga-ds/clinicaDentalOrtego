@@ -39,7 +39,7 @@ let appFooter = `
             </div>
 
             <!-- Contact Section -->
-            <div class="footer-section"">
+            <div class="footer-section">
                 <h4>Contacto</h4>
                 <ul>
                     <li>📍 C/ Madrazo 141. pral 1ª</li>
