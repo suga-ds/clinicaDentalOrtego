@@ -11,13 +11,15 @@ let appFooter = `
             <!-- Browse Section -->
             <div class="footer-section nav-footer">
                 <h4>Navegación</h4>
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="equipo.html">Equipo</a></li>
-                    <li><a href="tratamientos.html">Tratamientos</a></li>
-                    <li><a href="instalaciones.html">Instalaciones</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                </ul>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="equipo.html">Equipo</a></li>
+                        <li><a href="tratamientos.html">Tratamientos</a></li>
+                        <li><a href="instalaciones.html">Instalaciones</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
             </div>
 
             <!-- Services Section -->
