@@ -148,12 +148,11 @@ p {
     margin-bottom: 5px;
     text-align: center;
     color: #fff;
-    font-size: 1.2rem;
+    font-size: 2vw;
     font-weight: bold;
     text-decoration: none;
     transition: background-color 0.3s ease;
     border-radius: 5px 0 0 5px;
-    font-size: 1.7vw;
 }
 
 .floating-icons a img {
@@ -443,6 +442,7 @@ p {
 .nav-button {
     font-size: 1.2vw;
     margin-top: 1vh;
+    padding: 0.5vw;
 }
 
 
@@ -487,18 +487,6 @@ p {
 
 /* MEDIA QUERIES */
 
-@media (min-width: 1100px) {
-    .sidebar {
-        transform: translateX(0);
-        /* Always visible on desktop */
-    }
-
-    .hamburger {
-        display: none;
-        /* Hide hamburger on desktop */
-    }
-}
-
 @media (max-width: 1100px) {
 
     body {
@@ -510,6 +498,10 @@ p {
     }
 
     /* Header */
+
+    #useful {
+        padding-top: 1.5vh;
+    }
 
     #contact-info ul {
         flex-direction: column;
@@ -538,7 +530,8 @@ p {
     }
 
     .floating-button {
-        font-size: 2vh;
+        font-size: 2.5vh;
+        margin-top: 2vh;
     }
 
     .floating-icons a img {
@@ -548,23 +541,32 @@ p {
     #image-button-mobile {
         display: flex;
         justify-content: space-between;
-        display: block;
+        padding: 2vh 5vw 2vh 5vw;
+    }
+    
+    #image-button-mobile button {
+        padding: 1vh;
+        width: 20vw;
+        font-size: 1.5vh;
     }
 
-    .mobile-navigation ul {
+    #mobile-navigation ul {
         list-style: none;
-        color: #464646;
-        padding: 0vw;
+        font-size: 2vh;
     }
 
-    .mobile-navigation ul li {
+    #mobile-navigation ul li {
         padding: 1vh 0vw;
-        border-bottom: 3px solid #87878777;
+        border-bottom: 3px solid #8787874b;
     }
 
-    .mobile-navigation ul li a {
-        color: #464646;
+    #mobile-navigation ul li a {
         text-decoration: none;
+        color: #464646;
+    }
+
+    #mobile-navigation {
+        display: none; /* Ensure the menu is hidden by default */
     }
 
     /* FOOTER */
