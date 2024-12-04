@@ -11,9 +11,9 @@ document.addEventListener('DOMContentLoaded', function () {
         <div class="dropdown">
             <button class="dropdown-button">ESP<br>CAT<br>ENG</button>
             <div class="dropdown-content">
-                <a href="../es/index.html">Español</a>
-                <a href="../ca/index.html">Català</a>
-                <a href="../en/index.html">English</a>                
+                <a href="/es/index.html">Español</a>
+                <a href="/ca/index.html">Català</a>
+                <a href="/en/index.html">English</a>                
             </div>
         </div>
     </div>
@@ -29,10 +29,10 @@ document.addEventListener('DOMContentLoaded', function () {
     <!-- Floating Buttons -->
     <div class="floating-icons">
         <a href="tel:+34932097167" class="floating-button phone">
-            <img src="../images/phone-logo.png"></img>
+            <img src="../images/phone-logo.png" alt="phone image"></img>
         </a>
         <a href="https://wa.me/34646272974" target="_blank" class="floating-button whatsapp">
-            <img src="../images/whatsapp-logo.png"></img>
+            <img src="../images/whatsapp-logo.png" alt="whatsapp logo image"></img>
         </a>
         <a href="mailto:clinicadentalortego@gmail.com" class="floating-button email">
             ✉

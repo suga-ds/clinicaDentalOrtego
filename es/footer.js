@@ -13,11 +13,11 @@ let appFooter = `
                 <h4>Navegación</h4>
                 <nav>
                     <ul>
-                        <li><a href="index.html">Inicio</a></li>
-                        <li><a href="equipo.html">Equipo</a></li>
-                        <li><a href="tratamientos.html">Tratamientos</a></li>
-                        <li><a href="instalaciones.html">Instalaciones</a></li>
-                        <li><a href="contacto.html">Contacto</a></li>
+                        <li><a href="/es/index.html">Inicio</a></li>
+                        <li><a href="/es/equipo.html">Equipo</a></li>
+                        <li><a href="/es/tratamientos.html">Tratamientos</a></li>
+                        <li><a href="/es/instalaciones.html">Instalaciones</a></li>
+                        <li><a href="/es/contacto.html">Contacto</a></li>
                     </ul>
                 </nav>
             </div>
