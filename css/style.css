@@ -571,20 +571,39 @@ p {
 
     /* FOOTER */
 
-    .footer-container h2 {
+    .footer-container {
+        display: block;
+    }
+
+    .footer-section {
+        align-items: flex-start;
+    }
+
+    .footer-section h2 {
+        font-size: 3.5vh;
+        text-align: left;
+    }
+
+    .footer-section p {
+        font-size: 2.5vh;
+        text-align: left;
+    }
+
+    .footer-section h4 {
+        font-size: 3vh;
+        margin-bottom: 2vh;
+    }
+
+    .footer-section li {
         font-size: 2vh;
-    }
-
-    .footer-container h4 {
-        font-size: 1.9vh;
-    }
-
-    .footer-container li {
-        font-size: 1.5vh;
     }
 
     .nav-footer {
         display: none;
+    }
+
+    .company-info {
+        max-width: none;
     }
 
     /* INICIO */
