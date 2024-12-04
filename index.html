@@ -4,7 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <title>Clínica Dental Ortego</title>
-    <link href='./css/style.css' rel='stylesheet'>
+    <meta name="description"
+        content="Clínica Dental Ortego: más de 50 años cuidando de tu salud bucodental en Barcelona. Tratamientos avanzados, odontología ética y trato personalizado." />
+    <link rel="icon" href="../images/logo-black.png" type="image/png">
+    <link href='../css/style.css' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <link rel="alternate" href="https://clinicadentalortego.com/en/" hreflang="en" />
@@ -13,45 +16,31 @@
 </head>
 
 <body>
+
+    <div class="navigation-mobile"></div>
+    <script src="mobile-nav.js"></script>
+    <script src="mobile-nav-toggle.js"></script>
+
     <header id="app-header"></header>
-    <script src="header.js"></script>
+    <script src="../header.js"></script>
 
-    <div class="sidebar">
-        <img src="../images/logo-white.png" alt="logo" style="height: 50px;">
-        <nav class="menu">
-            <a href="./es/index.html">INICIO</a>
-            <a href="./es/equipo.html">EQUIPO</a>
-            <a href="./es/tratamientos.html">TRATAMIENTOS</a>
-            <a href="./es/instalaciones.html">INSTALACIONES</a>
-            <a href="./es/contacto.html">CONTACTO</a>
-        </nav>
-    </div>
-    
-    <div id="blog-text">
-        
-            <p>La Clínica Dental Ortego fue fundada en 1964 en Barcelona, en el barrio de Galvany (Sarrià-Sant Gervasi), por
-                el Dr. Mariano Ortego Rivero. Desde entonces, con profesionalidad y dedicación, nuestra clínica ha crecido y
-                se ha consolidado como un referente en el cuidado de la salud bucodental.</p>
+    <aside class="sidebar"></aside>
+    <script src="nav.js"></script>
 
-            <p>Hoy en día, con tres generaciones de odontólogos, seguimos siendo una clínica familiar cuya prioridad es la
-                ética profesional, la prevención y el cuidado de la salud bucodental, así como ofrecer un trato
-                personalizado y cercano a nuestros pacientes. Queremos que nuestros pacientes confíen en nosotros y tengan
-                la seguridad de que el plan de tratamiento personalizado que les ofrecemos es, sin duda, la mejor opción
-                para ellos.</p>
-    </div>
+    <main id="blog-text">
+        <p>La Clínica Dental Ortego fue fundada en 1964 en Barcelona, en el barrio de Galvany (Sarrià-Sant Gervasi), por
+            el Dr. Mariano Ortego Rivero. Desde entonces, con profesionalidad y dedicación, nuestra clínica ha crecido y
+            se ha consolidado como un referente en el cuidado de la salud bucodental.</p>
 
-    <script>
-        function toggleSidebar() {
-            const sidebar = document.querySelector('.sidebar');
-            const menu = document.querySelector('.menu');
-            sidebar.classList.toggle('active');
-            menu.classList.toggle('active');
-        }
-    </script>
-
+        <p>Hoy en día, con tres generaciones de odontólogos, seguimos siendo una clínica familiar cuya prioridad es la
+            ética profesional, la prevención y el cuidado de la salud bucodental, así como ofrecer un trato
+            personalizado y cercano a nuestros pacientes. Queremos que nuestros pacientes confíen en nosotros y tengan
+            la seguridad de que el plan de tratamiento personalizado que les ofrecemos es, sin duda, la mejor opción
+            para ellos.</p>
+    </main>
 
     <footer id="app-footer"></footer>
-    <script async src="./es/footer.js"></script>
+    <script async src="footer.js"></script>
 
 </body>
 
