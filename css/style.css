@@ -20,28 +20,21 @@ p {
     margin: 0vh 5vw;
     padding: 5vh 0;
     align-items: center;
-    /* Vertically centers content */
 }
 
 #contact-info ul {
     padding: 0;
-    /* Remove default padding */
     margin: 0;
-    /* Remove default margin */
     display: flex;
-    /* Display items in a horizontal row */
     gap: 2vw;
-    /* Adds space between each item */
     font-size: 1.4vw;
     font-weight: 900;
 }
 
 #contact-info li {
     margin: 0;
-    /* Ensures no extra vertical margin */
 }
 
-/* Button and dropdown */
 .dropdown {
     position: relative;
     display: inline-block;
@@ -212,6 +205,15 @@ p {
     max-width: 170px;
     min-width: 24vw;
     text-align: center;
+}
+
+.company-info div {
+    display: flex;
+    justify-content: center;
+}
+
+.company-info div img {
+    width: 6vw;
 }
 
 .logo-placeholder {
@@ -410,7 +412,7 @@ p {
     overflow: hidden;
     width: 62vw;
     max-width: 100%;
-    margin: 0 auto;
+    margin: 10vh auto;
 }
 
 .slider {
@@ -508,7 +510,7 @@ p {
     }
 
     #contact-info ul li {
-        font-size: 1.5vh;
+        font-size: 2vh;
     }
 
     .dropdown-button {
@@ -543,7 +545,7 @@ p {
         justify-content: space-between;
         padding: 2vh 5vw 2vh 5vw;
     }
-    
+
     #image-button-mobile button {
         padding: 1vh;
         width: 20vw;
@@ -566,7 +568,8 @@ p {
     }
 
     #mobile-navigation {
-        display: none; /* Ensure the menu is hidden by default */
+        display: none;
+        /* Ensure the menu is hidden by default */
     }
 
     /* FOOTER */
@@ -605,6 +608,14 @@ p {
     .company-info {
         max-width: none;
     }
+
+    .company-info div {
+        justify-content: flex-start;
+    }
+
+    .company-info div img {
+        width: 7vh;
+    }    
 
     /* INICIO */
 

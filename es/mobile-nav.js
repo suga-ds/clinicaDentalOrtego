@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const spanishMobileNav = `
         <div id="image-button-mobile">
             <img src="../images/logo-black.png" alt="logo" height="80px">
-            <button aria-expanded="false" role="button">MENÚ</button>
+            <button aria-expanded="false" role="button" class="dropdown-button">MENÚ</button>
         </div>
         <nav id="mobile-navigation">
             <ul>
