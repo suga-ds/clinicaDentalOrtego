@@ -335,7 +335,6 @@ p {
     flex-wrap: wrap;
     gap: 25px;
     justify-content: center;
-    max-width: 800px;
 }
 
 .profile {
@@ -347,7 +346,7 @@ p {
 
 .profile img {
     width: auto;
-    height: 300px;
+    height: 40vh;
     border-radius: 5px;
     background-color: #d3d3d3;
     display: block;
@@ -380,12 +379,12 @@ p {
     text-align: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     background: rgb(255, 255, 255);
-    padding: 12px;
+    padding: 30px;
 }
 
 .treatment-title {
     color: #333;
-    font-size: 2.5vw;
+    font-size: 2.2vw;
     padding: 10px 0;
     margin: 0;
 }
@@ -393,6 +392,7 @@ p {
 .treatment-description {
     color: #666;
     margin-bottom: 20px;
+    text-align: left;
 }
 
 /* INSTALACIONES */
@@ -499,7 +499,7 @@ p {
         font-size: 2vh;
     }
 
-    /* Header */
+    /* HEADER */
 
     #useful {
         padding-top: 1.5vh;
@@ -516,6 +516,7 @@ p {
     .dropdown-button {
         font-size: 1.5vh;
         width: 20vw;
+        line-height: 3vh;
     }
 
     .dropdown-content {
@@ -630,9 +631,17 @@ p {
 
     /* EQUIPO */
 
+    #team-photo {
+        margin-top: 7vh;
+    }
+
+    #team-photo img {
+        width: 80vw;
+    }
+
     #team-title {
         margin: 5vh;
-        font-size: 2.0vh;
+        font-size: 2.4vh;
     }
 
     #profiles-container {
@@ -640,7 +649,27 @@ p {
     }
 
     .profile h3 {
-        font-size: 1.6vh;
+        font-size: 2.2vh;
+        min-height: auto;
+    }
+
+    /* TRATAMIENTOS */
+
+    .treatments-container {
+        flex-direction: column;
+    }
+
+    .treatment {
+        max-width: none;
+        padding: 30px;
+    }
+
+    .treatment-icon img {
+        height: 8vh;
+    }
+
+    .treatment-title {
+        font-size: 2.2vh;
     }
 
     /* INSTALACIONES */
