@@ -355,7 +355,7 @@ p {
 
 .profile h3 {
     margin-top: 4vh;
-    font-size: 1.6vw;
+    font-size: 32px;
 }
 
 .profile p {
@@ -419,24 +419,18 @@ p {
     display: flex;
     transition: transform 0.5s ease-in-out;
     gap: 2vw;
-    /* Consistent spacing between slides */
 }
 
 .slide {
     flex: 0 0 30vw;
-    /* Fixed slide width */
-    height: 600px;
-    /* Fixed slide height */
+    height: 80vh;
     box-sizing: border-box;
 }
 
 .slide img {
     width: 100%;
-    /* Fill the slide */
     height: 100%;
-    /* Fill the slide */
     object-fit: cover;
-    /* Crop and center the image */
     display: block;
     border-radius: 10px;
 }
