@@ -50,8 +50,6 @@ let appFooter = `
             </div>
         </div>
         <div class="footer-bottom">
-            <p>© Copyright 2024</p>
-            <a href="#">Privacy Policy</a>
             <p>Website Designed by <span href="https://dexifra.com">dexifra</span></p>
         </div>
     </footer>
