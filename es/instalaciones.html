@@ -61,35 +61,37 @@
     <script>
         let currentIndex = 0;
         const slider = document.getElementById('slider');
-        const slideWidth = document.querySelector('.slide').offsetWidth; // Dynamically get slide width
-        const slideGap = parseFloat(getComputedStyle(slider).gap); // Dynamically get gap size
-        const totalSlides = document.querySelectorAll('.slide').length;
-        const sliderContainerWidth = document.querySelector('.slider-container').offsetWidth;
-        let slidesVisible = Math.floor(sliderContainerWidth / (slideWidth + slideGap)); // Visible slides based on container width
+        const slides = document.querySelectorAll('.slide');
 
-        function scrollSlider(step) {
-            const slidesToScroll = 2; // Number of slides to scroll each time
-            currentIndex += step * slidesToScroll;
-
-            // Ensure the current index does not exceed the valid range
-            const maxIndex = Math.max(0, totalSlides - slidesVisible);
-
-            if (currentIndex < 0) {
-                currentIndex = 0; // Prevent underflow
-            } else if (currentIndex > maxIndex) {
-                currentIndex = maxIndex; // Prevent overflow
-            }
-
-            slider.style.transform = `translateX(-${currentIndex * (slideWidth + slideGap)}px)`;
+        // Helper function to calculate slide width dynamically
+        function getSlideMetrics() {
+            const slide = slides[0];
+            const slideWidth = slide.offsetWidth;
+            const gap = parseFloat(getComputedStyle(slider).gap || 0);
+            return { slideWidth, gap };
         }
 
-        // Recalculate slide width and visible slides on window resize
+        // Scroll the slider
+        function scrollSlider(step) {
+            const { slideWidth, gap } = getSlideMetrics();
+            const totalSlides = slides.length;
+            const containerWidth = document.querySelector('.slider-container').offsetWidth;
+            const slidesVisible = Math.floor(containerWidth / (slideWidth + gap));
+            const maxIndex = totalSlides - slidesVisible;
+
+            currentIndex += step;
+
+            // Clamp the currentIndex between 0 and maxIndex
+            currentIndex = Math.max(0, Math.min(currentIndex, maxIndex));
+
+            const distanceToScroll = currentIndex * (slideWidth + gap);
+            slider.style.transform = `translateX(-${distanceToScroll}px)`;
+        }
+
+        // Recalculate metrics on window resize
         window.addEventListener('resize', () => {
-            const newSlideWidth = document.querySelector('.slide').offsetWidth;
-            const newSliderContainerWidth = document.querySelector('.slider-container').offsetWidth;
-            const newSlideGap = parseFloat(getComputedStyle(slider).gap);
-            slidesVisible = Math.floor(newSliderContainerWidth / (newSlideWidth + newSlideGap));
-            scrollSlider(0); // Reset to current index to re-align the slider
+            currentIndex = 0; // Reset to the first slide to avoid misalignment
+            scrollSlider(0);  // Trigger recalculation
         });
     </script>
 </body>
