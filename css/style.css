@@ -339,14 +339,14 @@ p {
 }
 
 .profile {
-    flex-basis: calc(33.333% - 20px);
+    flex-basis: calc(33.333%);
     box-sizing: border-box;
     margin-bottom: 4vh;
 }
 
 .profile img {
     width: 20vw;
-    height: 35vh;
+    height: 40vh;
     border-radius: 5px;
     background-color: #d3d3d3;
     display: block;
@@ -509,7 +509,7 @@ p {
 @media (max-width: 1100px) {
 
     body {
-        margin-left: 0;
+        margin: 0;
     }
 
     p {
@@ -662,12 +662,28 @@ p {
     }
 
     #profiles-container {
-        margin: 0;
+        padding-top: 0vh;
+        margin-top: 0vh;
+    }
+
+    .profile {
+        display:flex;
+        gap: 4vw;
+    }
+
+    .profile-info {
+        width: 40vw;
+    }
+    
+    .profile img {
+        width: 40vw;
+        height: 25vh;
     }
 
     .profile h3 {
         font-size: 2.2vh;
         min-height: auto;
+        margin-top: 1vh;
     }
 
     /* TRATAMIENTOS */
@@ -700,6 +716,16 @@ p {
         margin-right: 5vw;
     }
 
+    /* INSTALACIONES */
+
+    .slider-container {
+        height: 40vh;
+    }
+
+    .slider {
+        height: 40vh;
+    }
+
     /* CONTACTO */
 
     .info-section {
@@ -712,6 +738,14 @@ p {
 
     .info-block h3 {
         font-size: 2.2vh;
+    }
+
+    .direction {
+        font-size: 2vh;
+    }
+
+    .info-block p span {
+        font-size: 4vw;
     }
 
 
