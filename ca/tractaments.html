@@ -4,121 +4,90 @@
 <head>
     <meta charset="UTF-8">
     <title>Clínica Dental Ortego</title>
+    <meta name="description"
+        content="Explora els tractaments dentals avançats a Clínica Dental Ortego: ortodòncia, implants, blanquejament i més per a un somriure saludable." />
     <link href='../css/style.css' rel='stylesheet'>
-    <link href='style-library.css' rel='stylesheet'>
+    <link rel="icon" href="../images/logo-black.png" type="image/png">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
 </head>
 
 <body>
+    <div class="navigation-mobile"></div>
+    <script src="mobile-nav.js"></script>
+    <script src="mobile-nav-toggle.js"></script>
+
     <header id="app-header"></header>
     <script src="../header.js"></script>
 
-    <div class="sidebar">
-        <img src="../images/logo-white.png" alt="logo" style="height: 50px;">
-        <a href="index.html">INICI</a>
-        <a href="equip.html">EQUIP</a>
-        <a href="tractaments.html">TRATACTAMENTS</a>
-        <a href="instalacions.html">INSTALACIONS</a>
-        <a href="contacte.html">CONTACTE</a>
-    </div>
+    <aside class="sidebar"></aside>
+    <script src="nav.js"></script>
 
-    <div>
-        <div class="treatmentUp">
-            <div class="treatments-container">
-                <div class="treatment">
-                    <div class="treatment-icon">
-                        <!-- Icona per Carilles (usar imatge actual o font d'icona) -->
-                        <img src="../images/estetica.png" alt="Carilles" height="90px">
-                    </div>
-                    <h3 class="treatment-title">Estètica Dental</h3>
-                    <p class="treatment-description">L'estètica dental se centra en millorar l'aparença del somriure
-                        mitjançant tractaments que corregeixen el color, la posició, la forma i la mida de les dents.
-                    </p>
-                </div>
-
-                <div class="treatment">
-                    <div class="treatment-icon">
-                        <!-- Icona per Implantologia (usar imatge actual o font d'icona) -->
-                        <img src="../images/implantologia.png" alt="Implantologia" height="90px">
-                    </div>
-                    <h3 class="treatment-title">Implantologia</h3>
-                    <p class="treatment-description">L'implantologia és l'especialitat odontològica dedicada a la
-                        col·locació d'implants dentals per reemplaçar dents perduts i restaurar la funció i l'estètica
-                        de la boca.</p>
-                </div>
-
-                <div class="treatment">
-                    <div class="treatment-icon">
-                        <!-- Icona per Odontopediatria (usar imatge actual o font d'icona) -->
-                        <img src="../images/odontopediatria.png" alt="Odontopediatria" height="90px">
-                    </div>
-                    <h3 class="treatment-title">Odontopediatria</h3>
-                    <p class="treatment-description">L'odontopediatria és la branca de l'odontologia que s'especialitza
-                        en la cura i el tractament dental de nens i adolescents, enfocant-se en el desenvolupament i
-                        manteniment d'una salut bucal òptima des de la infància.</p>
-                </div>
-
-                <div class="treatment">
-                    <div class="treatment-icon">
-                        <!-- Icona per Higiene Dental (usar imatge actual o font d'icona) -->
-                        <img src="../images/higieneDental.png" alt="Higiene Dental" height="90px">
-                    </div>
-                    <h3 class="treatment-title">Higiene Dental</h3>
-                    <p class="treatment-description">La higiene dental se centra en el manteniment de la salut bucal a
-                        través de la neteja i cura preventiva de les dents i genives per prevenir malalties com la
-                        càries i la gingivitis.</p>
-                </div>
+    <main class="treatments-container">
+        <div class="treatment">
+            <div class="treatment-header">
+                <img src="../images/estetica.png" alt="Foto d'estètica dental">
+                <h3 class="treatment-title">Estètica Dental</h3>
             </div>
+            <p class="treatment-description">L'estètica dental se centra a millorar l'aparença del somriure mitjançant tractaments que corregeixen el color, la posició, la forma i la mida de les dents.</p>
         </div>
 
-        <div class="treatmentDown">
-            <div class="treatments-container">
-                <div class="treatment">
-                    <div class="treatment-icon">
-                        <!-- Icona per Endodòncia (usar imatge actual o font d'icona) -->
-                        <img src="../images/endodoncia.png" alt="Endodòncia" height="90px">
-                    </div>
-                    <h3 class="treatment-title">Endodòncia</h3>
-                    <p class="treatment-description">L'endodòncia és una especialitat odontològica que tracta les
-                        malalties de la polpa dental i del teixit periapical, generalment mitjançant procediments com la
-                        teràpia de conductes radiculars.</p>
-                </div>
-
-                <div class="treatment">
-                    <div class="treatment-icon">
-                        <!-- Icona per Periodòncia (usar imatge actual o font d'icona) -->
-                        <img src="../images/periodoncia.png" alt="Periodòncia" height="90px">
-                    </div>
-                    <h3 class="treatment-title">Periodòncia</h3>
-                    <p class="treatment-description">La periodòncia és una branca de l'odontologia que se centra en la
-                        prevenció, diagnòstic i tractament de les malalties del teixit periodontal que envolta i suporta
-                        les dents.</p>
-                </div>
-
-                <div class="treatment">
-                    <div class="treatment-icon">
-                        <!-- Icona per Prostodòncia (usar imatge actual o font d'icona) -->
-                        <img src="../images/prostodoncia.png" alt="Prostodòncia" height="90px">
-                    </div>
-                    <h3 class="treatment-title">Pròtesis Dental i Rehabilitació Oral</h3>
-                    <p class="treatment-description">La prostodòncia s'especialitza en dissenyar i ajustar pròtesis
-                        dentals com corones, ponts i dentadures per restaurar la funció i estètica de la boca.</p>
-                </div>
-
-                <div class="treatment">
-                    <div class="treatment-icon">
-                        <!-- Icona per Restauradora (usar imatge actual o font d'icona) -->
-                        <img src="../images/restauradora.png" alt="Restauradora" height="90px">
-                    </div>
-                    <h3 class="treatment-title">Restauradora</h3>
-                    <p class="treatment-description">Restablim la funcionalitat i estètica del teu somriure amb pròtesis
-                        dentals d'alta qualitat i tècniques d'avantguarda.</p>
-                </div>
+        <div class="treatment">
+            <div class="treatment-header">
+                <img src="../images/implantologia.png" alt="Foto d'implantologia">
+                <h3 class="treatment-title">Implantologia</h3>
             </div>
+            <p class="treatment-description">L'implantologia és l'especialitat odontològica dedicada a la col·locació d'implants dentals per reemplaçar dents perduts i restaurar la funció i l'estètica de la boca.</p>
         </div>
-    </div>
 
+        <div class="treatment">
+            <div class="treatment-header">
+                <img src="../images/odontopediatria.png" alt="Foto d'odontopediatria">
+                <h3 class="treatment-title">Odontopediatria</h3>
+            </div>
+            <p class="treatment-description">L'odontopediatria és la branca de l'odontologia que s'especialitza en la cura i el tractament dental de nens i adolescents, enfocant-se en el desenvolupament i manteniment d'una salut bucal òptima des de la infància.</p>
+        </div>
+
+        <div class="treatment">
+            <div class="treatment-header">
+                <img src="../images/higieneDental.png" alt="Foto d'higiene dental">
+                <h3 class="treatment-title">Higiene Dental</h3>
+            </div>
+            <p class="treatment-description">La higiene dental se centra en el manteniment de la salut bucal a través de la neteja i cura preventiva de les dents i genives per prevenir malalties com la càries i la gingivitis.</p>
+        </div>
+
+        <div class="treatment">
+            <div class="treatment-header">
+                <img src="../images/endodoncia.png" alt="Foto d'endodòncia">
+                <h3 class="treatment-title">Endodòncia</h3>
+            </div>
+            <p class="treatment-description">L'endodòncia és una especialitat odontològica que tracta les malalties de la polpa dental i del teixit periapical, generalment mitjançant procediments com la teràpia de conductes radiculars.</p>
+        </div>
+
+        <div class="treatment">
+            <div class="treatment-header">
+                <img src="../images/periodoncia.png" alt="Foto de periodòncia">
+                <h3 class="treatment-title">Periodòncia</h3>
+            </div>
+            <p class="treatment-description">La periodòncia és una branca de l'odontologia que se centra en la prevenció, diagnòstic i tractament de les malalties del teixit periodontal que envolta i suporta les dents.</p>
+        </div>
+
+        <div class="treatment">
+            <div class="treatment-header">
+                <img src="../images/prostodoncia.png" alt="Foto de pròtesis dental">
+                <h3 class="treatment-title">Pròtesis Dental i Rehabilitació Oral</h3>
+            </div>
+            <p class="treatment-description">La prostodòncia s'especialitza en dissenyar i ajustar pròtesis dentals com corones, ponts i dentadures per restaurar la funció i l'estètica de la boca.</p>
+        </div>
+
+        <div class="treatment">
+            <div class="treatment-header">
+                <img src="../images/restauradora.png" alt="Foto de restauradora">
+                <h3 class="treatment-title">Restauradora</h3>
+            </div>
+            <p class="treatment-description">Restablim la funcionalitat i l'estètica del teu somriure amb pròtesis dentals d'alta qualitat i tècniques d'avantguarda.</p>
+        </div>
+    </main>
 
     <footer id="app-footer"></footer>
     <script async src="footer.js"></script>

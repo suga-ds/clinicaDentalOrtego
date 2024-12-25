@@ -1,110 +1,93 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <title>Clínica Dental Ortego</title>
+    <meta name="description"
+        content="Explore advanced dental treatments at Clínica Dental Ortego: orthodontics, implants, whitening, and more for a healthy smile." />
     <link href='../css/style.css' rel='stylesheet'>
-    <link href='style-library.css' rel='stylesheet'>
+    <link rel="icon" href="../images/logo-black.png" type="image/png">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
 </head>
 
 <body>
+    <div class="navigation-mobile"></div>
+    <script src="mobile-nav.js"></script>
+    <script src="mobile-nav-toggle.js"></script>
+
     <header id="app-header"></header>
     <script src="../header.js"></script>
 
-    <div class="sidebar">
-        <img src="../images/logo-white.png" alt="logo" style="height: 50px;">
-        <a href="index.html">HOME</a>
-        <a href="team.html">TEAM</a>
-        <a href="treatments.html">TREATMENTS</a>
-        <a href="instalations.html">INSTALATIONS</a>
-        <a href="contact.html">CONTACT</a>
-    </div>
+    <aside class="sidebar"></aside>
+    <script src="nav.js"></script>
 
-    <div>
-        <div class="treatmentUp">
-            <div class="treatments-container">
-                <div class="treatment">
-                    <div class="treatment-icon">
-                        <!-- Icon for Carillas (use actual image or icon font) -->
-                        <img src="../images/estetica.png" alt="Carillas" height="90px">
-                    </div>
-                    <h3 class="treatment-title">Dental Esthetics</h3>
-                    <p class="treatment-description">Dental esthetics focuses on improving the appearance of the smile through treatments that correct the color, position, shape, and size of the teeth.</p>
-                </div>
-
-                <div class="treatment">
-                    <div class="treatment-icon">
-                        <!-- Icon for Implantología (use actual image or icon font) -->
-                        <img src="../images/implantologia.png" alt="Implantología" height="90px">
-                    </div>
-                    <h3 class="treatment-title">Implantology</h3>
-                    <p class="treatment-description">Implantology is the dental specialty dedicated to the placement of dental implants to replace lost teeth and restore the function and esthetics of the mouth.</p>
-                </div>
-
-                <div class="treatment">
-                    <div class="treatment-icon">
-                        <!-- Icon for Odontopediatría (use actual image or icon font) -->
-                        <img src="../images/odontopediatria.png" alt="Odontopediatría" height="90px">
-                    </div>
-                    <h3 class="treatment-title">Pediatric Dentistry</h3>
-                    <p class="treatment-description">Pediatric dentistry is the branch of dentistry that specializes in the care and dental treatment of children and adolescents, focusing on the development and maintenance of optimal oral health from infancy.</p>
-                </div>
-
-                <div class="treatment">
-                    <div class="treatment-icon">
-                        <!-- Icon for Higiene Dental (use actual image or icon font) -->
-                        <img src="../images/higieneDental.png" alt="Higiene Dental" height="90px">
-                    </div>
-                    <h3 class="treatment-title">Dental hygiene</h3>
-                    <p class="treatment-description">Dental hygiene focuses on maintaining oral health through the cleaning and preventive care of teeth and gums to prevent diseases such as cavities and gingivitis.</p>
-                </div>
+    <main class="treatments-container">
+        <div class="treatment">
+            <div class="treatment-header">
+                <img src="../images/estetica.png" alt="Photo of dental aesthetics">
+                <h3 class="treatment-title">Dental Aesthetics</h3>
             </div>
+            <p class="treatment-description">Dental aesthetics focuses on improving the appearance of the smile through treatments that correct the color, position, shape, and size of the teeth.</p>
         </div>
 
-        <div class="treatmentDown">
-            <div class="treatments-container">
-                <div class="treatment">
-                    <div class="treatment-icon">
-                        <!-- Icon for Endodoncia (use actual image or icon font) -->
-                        <img src="../images/endodoncia.png" alt="Endodoncia" height="90px">
-                    </div>
-                    <h3 class="treatment-title">Endodontics</h3>
-                    <p class="treatment-description">Endodontics is a dental specialty that treats diseases of the dental pulp and periapical tissue, generally through procedures such as root canal therapy.</p>
-                </div>
-
-                <div class="treatment">
-                    <div class="treatment-icon">
-                        <!-- Icon for Periodoncia (use actual image or icon font) -->
-                        <img src="../images/periodoncia.png" alt="Periodoncia" height="90px">
-                    </div>
-                    <h3 class="treatment-title">Periodontics</h3>
-                    <p class="treatment-description">Periodontics is a dental specialty focused on the prevention, diagnosis, and treatment of diseases affecting the gums and supporting structures of the teeth.</p>
-                </div>
-
-                <div class="treatment">
-                    <div class="treatment-icon">
-                        <!-- Icon for Prostodoncia (use actual image or icon font) -->
-                        <img src="../images/prostodoncia.png" alt="Prostodoncia" height="90px">
-                    </div>
-                    <h3 class="treatment-title">Dental Prosthetics and Oral Rehabilitation</h3>
-                    <p class="treatment-description">We restore the functionality and aesthetics of your smile through dental prosthetics and oral rehabilitation, using advanced techniques to ensure quality and comfort.</p>
-                </div>
-
-                <div class="treatment">
-                    <div class="treatment-icon">
-                        <!-- Icon for Prostodoncia (use actual image or icon font) -->
-                        <img src="../images/restauradora.png" alt="Restauradora" height="90px">
-                    </div>
-                    <h3 class="treatment-title">Restorative</h3>
-                    <p class="treatment-description">We restore the functionality and aesthetics of your smile with high-quality dental prosthetics and cutting-edge techniques.</p>
-                </div>
+        <div class="treatment">
+            <div class="treatment-header">
+                <img src="../images/implantologia.png" alt="Photo of implantology">
+                <h3 class="treatment-title">Implantology</h3>
             </div>
+            <p class="treatment-description">Implantology is the dental specialty dedicated to the placement of dental implants to replace lost teeth and restore the function and aesthetics of the mouth.</p>
         </div>
-    </div>
 
+        <div class="treatment">
+            <div class="treatment-header">
+                <img src="../images/odontopediatria.png" alt="Photo of pediatric dentistry">
+                <h3 class="treatment-title">Pediatric Dentistry</h3>
+            </div>
+            <p class="treatment-description">Pediatric dentistry is the branch of dentistry that specializes in the care and dental treatment of children and adolescents, focusing on the development and maintenance of optimal oral health from infancy.</p>
+        </div>
+
+        <div class="treatment">
+            <div class="treatment-header">
+                <img src="../images/higieneDental.png" alt="Photo of dental hygiene">
+                <h3 class="treatment-title">Dental Hygiene</h3>
+            </div>
+            <p class="treatment-description">Dental hygiene focuses on maintaining oral health through the cleaning and preventive care of teeth and gums to prevent diseases such as cavities and gingivitis.</p>
+        </div>
+
+        <div class="treatment">
+            <div class="treatment-header">
+                <img src="../images/endodoncia.png" alt="Photo of endodontics">
+                <h3 class="treatment-title">Endodontics</h3>
+            </div>
+            <p class="treatment-description">Endodontics is a dental specialty that treats diseases of the dental pulp and periapical tissue, generally through procedures such as root canal therapy.</p>
+        </div>
+
+        <div class="treatment">
+            <div class="treatment-header">
+                <img src="../images/periodoncia.png" alt="Photo of periodontics">
+                <h3 class="treatment-title">Periodontics</h3>
+            </div>
+            <p class="treatment-description">Periodontics is a dental specialty focused on the prevention, diagnosis, and treatment of diseases affecting the gums and supporting structures of the teeth.</p>
+        </div>
+
+        <div class="treatment">
+            <div class="treatment-header">
+                <img src="../images/prostodoncia.png" alt="Photo of dental prosthetics">
+                <h3 class="treatment-title">Dental Prosthetics and Oral Rehabilitation</h3>
+            </div>
+            <p class="treatment-description">Dental prosthetics specialize in designing and fitting dental appliances such as crowns, bridges, and dentures to restore the function and aesthetics of the mouth.</p>
+        </div>
+
+        <div class="treatment">
+            <div class="treatment-header">
+                <img src="../images/restauradora.png" alt="Photo of restorative dentistry">
+                <h3 class="treatment-title">Restorative Dentistry</h3>
+            </div>
+            <p class="treatment-description">We restore the functionality and aesthetics of your smile with high-quality dental prosthetics and cutting-edge techniques.</p>
+        </div>
+    </main>
 
     <footer id="app-footer"></footer>
     <script async src="footer.js"></script>
