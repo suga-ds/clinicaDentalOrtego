@@ -11,17 +11,15 @@
 </head>
 
 <body>
+    <div class="navigation-mobile"></div>
+    <script src="mobile-nav.js"></script>
+    <script src="../mobile-nav-toggle.js"></script>
+
     <header id="app-header"></header>
     <script src="../header.js"></script>
 
-    <div class="sidebar">
-        <img src="../images/logo-white.png" alt="logo" style="height: 50px;">
-        <a href="index.html">INICI</a>
-        <a href="equip.html">EQUIP</a>
-        <a href="tractaments.html">TRATACTAMENTS</a>
-        <a href="instalacions.html">INSTALACIONS</a>
-        <a href="contacte.html">CONTACTE</a>
-    </div>
+    <aside class="sidebar"></aside>
+    <script src="nav.js"></script>
 
     <div class="contacto">
         <div class="info-section">
@@ -32,10 +30,13 @@
                 <p class="icon">📱 +34 646 272 974 </p>
             </div>
             <div class="info-block">
-                <h3>Aparcament Proper</h3>
-                <p class="icon">🅿️ Aparcament Galvany: Carrer de Calaf, 28</p>
-                <p class="icon">🅿️ Aparcament públic: Carrer Calvet, 33</p>
-                <p class="icon">🅿️ Aparcament Les Amèriques: Carrer de Santaló, 30</p>
+                <h3>Parking Cercano</h3>
+                <p class='parking'>🅿️ Galvany</p>
+                <p class='direction'>C/ de Calaf, 28</p>
+                <p class='parking'>🅿️ Públic</p>
+                <p class='direction'>C/ Calvet, 33</p>
+                <p class='parking'>🅿️ Les Amèriques</p>
+                <p class='direction'>C/ de Santaló, 30</p>
             </div>
             <div class="info-block">
                 <h3>Com Arribar</h3>
@@ -57,10 +58,10 @@
         <div class="maps">
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5985.951757688295!2d2.1413566!3d41.3963302!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a49875e03a2567%3A0x4310faab1ddddb1c!2sCl%C3%ADnica%20Dental%20Ortego!5e0!3m2!1sen!2ses!4v1714245717610!5m2!1sen!2ses"
-                width="1300px" height="950px" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade" style="border-radius: 1px;"></iframe>
+                width="100%" height="600px" style="border-radius: 1px;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-    </div>
+        </div>
 
     <footer id="app-footer"></footer>
     <script async src="footer.js"></script>
