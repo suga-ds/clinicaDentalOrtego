@@ -260,6 +260,11 @@ p {
     text-decoration: none;
 }
 
+#maps-link {
+    color: purple;
+    text-decoration: underline;
+}
+
 /* INICIO */
 
 #blog-text {

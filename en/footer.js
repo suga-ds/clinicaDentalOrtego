@@ -41,9 +41,10 @@ let appFooter = `
                 <h4>Contact</h4>
                 <ul>
                     <li>📍 C/ Madrazo 141. pral 1ª</li>
-                    <li>✉️ clinicadentalortego@gmail.com</li>
-                    <li>☎️ +93 209 71 67</li>
-                    <li>📞 +34 646 272 974</li>
+                    <li>✉️ <a href="mailto:clinicadentalortego@gmail.com" target="_blank" rel="noopener">clinicadentalortego@gmail.com</a></li>
+                    <li>☎️ <a href="tel:+34932097167">+34 932 097 167</a></li>
+                    <li>📞 <a href="tel:+34646272974">+34 646 272 974</a></li>
+                    <li>🗺️ Leave a <a href="https://search.google.com/local/writereview?placeid=ChIJZyU64HWYpBIRHNvdHav6EEM" target="_blank" rel="noopener" id='maps-link'>Review</a> for Clínica Dental Ortego</li>
                 </ul>
             </div>
         </div>
