@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
             <a href="/ca/index.html">INICI</a>
             <a href="/ca/equip.html">EQUIP</a>
             <a href="/ca/tractaments.html">TRACTAMENTS</a>
-            <a href="/ca/instalacions.html">INSTAL·LACIONS</a>
+            <a href="/ca/instal·lacions.html">INSTAL·LACIONS</a>
             <a href="/ca/contacte.html">CONTACTE</a>
         </nav>
     `;
