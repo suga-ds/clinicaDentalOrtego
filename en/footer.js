@@ -15,7 +15,7 @@ let appFooter = `
                     <li><a href="index.html">Home</a></li>
                     <li><a href="team.html">Team</a></li>
                     <li><a href="treatments.html">Treatments</a></li>
-                    <li><a href="instalations.html">Facilities</a></li>
+                    <li><a href="installations.html">Facilities</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
