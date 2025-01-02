@@ -11,9 +11,9 @@ document.addEventListener('DOMContentLoaded', function () {
         <div class="dropdown">
             <button class="dropdown-button">ESP<br>CAT<br>ENG</button>
             <div class="dropdown-content">
-                <a hreflang="/es/index.html">Español</a>
-                <a hreflang="/ca/index.html">Català</a>
-                <a hreflang="/en/index.html">English</a>                
+                <a href="/es/index.html">Español</a>
+                <a href="/ca/index.html">Català</a>
+                <a href="/en/index.html">English</a>                
             </div>
         </div>
     </div>
