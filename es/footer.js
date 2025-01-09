@@ -47,6 +47,7 @@ let appFooter = `
                     <li>☎️ <a href="tel:+34932097167">+34 932 097 167</a></li>
                     <li>📞 <a href="tel:+34646272974">+34 646 272 974</a></li>
                     <li>🗺️ ¡Dejanos una <a href="https://search.google.com/local/writereview?placeid=ChIJZyU64HWYpBIRHNvdHav6EEM" target="_blank" rel="noopener" id='maps-link'>reseña!</a></li>
+                    <li><img alt="qr code" src="../images/qrcode.png" style="width: 10vw"></li>
                 </ul>
             </div>
         </div>
