@@ -3,9 +3,9 @@ document.addEventListener('DOMContentLoaded', function () {
     <div id="useful">
         <div id="contact-info">
             <ul>
-                <li>C/ Madrazo 141. pral 1ª, 08021, Barcelona</li>
-                <li>+34 932 097 167 / +34 646 272 974</li>
-                <li>dentalortego@gmail.com</li>
+                <li><i class="fa-solid fa-map-pin"></i> C/ Madrazo 141. pral 1ª, 08021, Barcelona</li>
+                <li><i class="fa-solid fa-phone"></i> +34 932 097 167 / <i class="fa-solid fa-mobile-screen"></i> +34 646 272 974</li>
+                <li><i class="fa-regular fa-envelope"></i> dentalortego@gmail.com</li>
             </ul>
         </div>
         <div class="dropdown">
@@ -29,13 +29,13 @@ document.addEventListener('DOMContentLoaded', function () {
     <!-- Floating Buttons -->
     <div class="floating-icons">
         <a href="tel:+34932097167" class="floating-button phone">
-            <img src="../images/phone-logo.png" alt="phone image"></img>
+            <i class="fa-solid fa-phone"></i>
         </a>
         <a href="https://wa.me/34646272974" target="_blank" class="floating-button whatsapp">
-            <img src="../images/whatsapp-logo.png" alt="whatsapp logo image"></img>
+           <i class="fa-brands fa-whatsapp"></i>
         </a>
         <a href="mailto:clinicadentalortego@gmail.com" class="floating-button email">
-            ✉
+            <i class="fa-regular fa-envelope"></i>
         </a>
 
     </div>

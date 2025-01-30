@@ -42,12 +42,11 @@ let appFooter = `
             <div class="footer-section">
                 <h4>Contacto</h4>
                 <ul>
-                    <li>📍 C/ Madrazo 141. pral 1ª</li>
-                    <li>✉️ <a href="mailto:clinicadentalortego@gmail.com" target="_blank" rel="noopener">clinicadentalortego@gmail.com</a></li>
-                    <li>☎️ <a href="tel:+34932097167">+34 932 097 167</a></li>
-                    <li>📞 <a href="tel:+34646272974">+34 646 272 974</a></li>
-                    <li>🗺️ ¡Dejanos una <a href="https://search.google.com/local/writereview?placeid=ChIJZyU64HWYpBIRHNvdHav6EEM" target="_blank" rel="noopener" id='maps-link'>reseña!</a></li>
-                    <li><img alt="qr code" src="../images/qrcode.png" style="width: 10vw"></li>
+                    <li><i class="fa-solid fa-map-pin"></i> C/ Madrazo 141. pral 1ª</li>
+                    <li><i class="fa-regular fa-envelope"></i> <a href="mailto:clinicadentalortego@gmail.com" target="_blank" rel="noopener">clinicadentalortego@gmail.com</a></li>
+                    <li><i class="fa-solid fa-phone"></i> <a href="tel:+34932097167">+34 932 097 167</a></li>
+                    <li><i class="fa-solid fa-mobile-screen"></i> <a href="tel:+34646272974">+34 646 272 974</a></li>
+                    <li style="display: flex; justify-content: space-between;"><div style="display: block;"><i class="fa-regular fa-map"></i> ¡Dejanos una<br><span style="color: rgba(255, 255, 255, 0);"><i class="fa-regular fa-map"></i> </span><a href="https://search.google.com/local/writereview?placeid=ChIJZyU64HWYpBIRHNvdHav6EEM" target="_blank" rel="noopener" id='maps-link'>reseña!</a></div><div><img alt="qr code" src="../images/qrcode.png" style="width: 7vw"></div></li>
                 </ul>
             </div>
         </div>
