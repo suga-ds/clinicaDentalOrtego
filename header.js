@@ -4,12 +4,13 @@ document.addEventListener('DOMContentLoaded', function () {
         <div id="contact-info">
             <ul>
                 <li><i class="fa-solid fa-map-pin"></i> C/ Madrazo 141. pral 1ª, 08021, Barcelona</li>
-                <li><i class="fa-solid fa-phone"></i> +34 932 097 167 / <i class="fa-solid fa-mobile-screen"></i> +34 646 272 974</li>
+                <li><i class="fa-solid fa-phone"></i> +34 932 097 167</li>
+                <li><i class="fa-solid fa-mobile-screen"></i> +34 646 272 974</li>
                 <li><i class="fa-regular fa-envelope"></i> dentalortego@gmail.com</li>
             </ul>
         </div>
         <div class="dropdown">
-            <button class="dropdown-button">ESP<br>CAT<br>ENG</button>
+            <button class="dropdown-button"><i class="fa-solid fa-globe"></i> <i class="fa-solid fa-angle-down"></i></button>
             <div class="dropdown-content">
                 <a href="/es/index.html">Español</a>
                 <a href="/ca/index.html">Català</a>
